@@ -12,6 +12,7 @@ GtkWidget* credit, *credit1, *credit2, *credit3, *credit4, *credit5, *credit6, *
 
 GtkWidget* majer, *majer1, *majer2, *majer3, *majer4, *majer5, *majer6, *majer7, *majer8, *majer9, *majer10, *majer11, *majer12, *majer13, *majer14, *majer15, *majer16;
 
+GtkWidget* add;
 char *subA[16];		//name of subject
 int gradeA[16]={0,};	//what i get point
 int creditA[16]={0,};	//credit of subject (sth-point)
@@ -21,19 +22,12 @@ int counter = 0;	//the number of subject
 
 void buttonClicked(GtkWidget *widget)
 {
-/*
-	if(widget == buttonStart)
-	{
-		stop = 0;
 
+	if(widget == add)
+	{
+		counter++;
 	}
-	else if(widget == buttonStop)
-	{
-
-		stop = 1;
-		check = 0;
-	}	
-	else if(widget == buttonReset)
+	/*else if(widget == buttonReset)
 	{
 		//reset버튼을 눌럿을시 stop경우일때만 reset을 시켜줍니다.
 		if(stop == 1)	
@@ -57,6 +51,7 @@ void clear()
 	for(i=0;i<16;i++){majerA[16]=0;}
 
 	counter = 0;
+	gtk_button_set_label(GTK_BUTTON(add),"add");
 
 	gtk_button_set_label(GTK_BUTTON(sub1),"sub1");	//button setting
 	gtk_button_set_label(GTK_BUTTON(sub2),"sub2");
@@ -156,215 +151,215 @@ int main (int argc, char *argv[])
 	/*-------------------------------------------------------*/
 	//make label
 	sub = gtk_label_new("subject");	//creating and setting size of button
-	gtk_widget_set_size_request(sub, 200, 50);
+	gtk_widget_set_size_request(sub, 150, 50);
 
 	grade = gtk_label_new("grade");
-	gtk_widget_set_size_request(grade, 200, 50);
+	gtk_widget_set_size_request(grade, 150, 50);
 
 	credit = gtk_label_new("credit");
-	gtk_widget_set_size_request(credit, 200, 50);
+	gtk_widget_set_size_request(credit, 150, 50);
 
 	majer = gtk_label_new("majer");
-	gtk_widget_set_size_request(majer, 200, 50);
+	gtk_widget_set_size_request(majer, 150, 50);
 
 //////////////////////////////////////////////////////
 	sub1 = gtk_label_new("subject1");
-	gtk_widget_set_size_request(sub1, 200, 50);
+	gtk_widget_set_size_request(sub1, 150, 50);
 
 	sub2 = gtk_label_new("subject2");
-	gtk_widget_set_size_request(sub2, 200, 50);
+	gtk_widget_set_size_request(sub2, 150, 50);
 
 	sub3 = gtk_label_new("subject3");
-	gtk_widget_set_size_request(sub3, 200, 50);
+	gtk_widget_set_size_request(sub3, 150, 50);
 
 	sub4 = gtk_label_new("subject4");
-	gtk_widget_set_size_request(sub4, 200, 50);
+	gtk_widget_set_size_request(sub4, 150, 50);
 
 	sub5 = gtk_label_new("subject5");
-	gtk_widget_set_size_request(sub5, 200, 50);
+	gtk_widget_set_size_request(sub5, 150, 50);
 
 	sub6 = gtk_label_new("subject6");
-	gtk_widget_set_size_request(sub6, 200, 50);
+	gtk_widget_set_size_request(sub6, 150, 50);
 
 	sub7 = gtk_label_new("subject7");
-	gtk_widget_set_size_request(sub7, 200, 50);
+	gtk_widget_set_size_request(sub7, 150, 50);
 
 	sub8 = gtk_label_new("subject8");
-	gtk_widget_set_size_request(sub8, 200, 50);
+	gtk_widget_set_size_request(sub8, 150, 50);
 
 	sub9 = gtk_label_new("subject9");
-	gtk_widget_set_size_request(sub9, 200, 50);
+	gtk_widget_set_size_request(sub9, 150, 50);
 
 	sub10 = gtk_label_new("subject10");
-	gtk_widget_set_size_request(sub10, 200, 50);
+	gtk_widget_set_size_request(sub10, 150, 50);
 
 	sub11 = gtk_label_new("subject11");
-	gtk_widget_set_size_request(sub11, 200, 50);
+	gtk_widget_set_size_request(sub11, 150, 50);
 
 	sub12 = gtk_label_new("subject12");
-	gtk_widget_set_size_request(sub12, 200, 50);
+	gtk_widget_set_size_request(sub12, 150, 50);
 
 	sub13 = gtk_label_new("subject13");
-	gtk_widget_set_size_request(sub13, 200, 50);
+	gtk_widget_set_size_request(sub13, 150, 50);
 
 	sub14 = gtk_label_new("subject14");
-	gtk_widget_set_size_request(sub14, 200, 50);
+	gtk_widget_set_size_request(sub14, 150, 50);
 
 	sub15 = gtk_label_new("subject15");
-	gtk_widget_set_size_request(sub15, 200, 50);
+	gtk_widget_set_size_request(sub15, 150, 50);
 
 	sub16 = gtk_label_new("subject16");
-	gtk_widget_set_size_request(sub16, 200, 50);
+	gtk_widget_set_size_request(sub16, 150, 50);
 
 	/*-------------------------------------------------------*/
 	//버튼을 만듭니다.
 	grade1 = gtk_button_new_with_label("grade1");
-	gtk_widget_set_size_request(grade1, 20, 50);
+	gtk_widget_set_size_request(grade1, 150, 50);
 		
 	grade2 = gtk_button_new_with_label("grade2");
-	gtk_widget_set_size_request(grade2, 20, 50);
+	gtk_widget_set_size_request(grade2, 150, 50);
 		
 	grade3 = gtk_button_new_with_label("grade3");
-	gtk_widget_set_size_request(grade3, 20, 50);
+	gtk_widget_set_size_request(grade3, 150, 50);
 		
 	grade4 = gtk_button_new_with_label("grade4");
-	gtk_widget_set_size_request(grade4, 20, 50);
+	gtk_widget_set_size_request(grade4, 150, 50);
 		
 	grade5 = gtk_button_new_with_label("grade5");
-	gtk_widget_set_size_request(grade5, 20, 50);
+	gtk_widget_set_size_request(grade5, 150, 50);
 		
 	grade6 = gtk_button_new_with_label("grade6");
-	gtk_widget_set_size_request(grade6, 20, 50);
+	gtk_widget_set_size_request(grade6, 150, 50);
 		
 	grade7 = gtk_button_new_with_label("grade7");
-	gtk_widget_set_size_request(grade7, 20, 50);
+	gtk_widget_set_size_request(grade7, 150, 50);
 		
 	grade8 = gtk_button_new_with_label("grade8");
-	gtk_widget_set_size_request(grade8, 20, 50);
+	gtk_widget_set_size_request(grade8, 150, 50);
 		
 	grade9 = gtk_button_new_with_label("grade9");
-	gtk_widget_set_size_request(grade9, 20, 50);
+	gtk_widget_set_size_request(grade9, 150, 50);
 		
 	grade10 = gtk_button_new_with_label("grade10");
-	gtk_widget_set_size_request(grade10, 20, 50);
+	gtk_widget_set_size_request(grade10, 150, 50);
 		
 	grade11 = gtk_button_new_with_label("grade11");
-	gtk_widget_set_size_request(grade11, 20, 50);
+	gtk_widget_set_size_request(grade11, 150, 50);
 		
 	grade12 = gtk_button_new_with_label("grade12");
-	gtk_widget_set_size_request(grade12, 20, 50);
+	gtk_widget_set_size_request(grade12, 150, 50);
 		
 	grade13 = gtk_button_new_with_label("grade13");
-	gtk_widget_set_size_request(grade13, 20, 50);
+	gtk_widget_set_size_request(grade13, 150, 50);
 		
 	grade14 = gtk_button_new_with_label("grade14");
-	gtk_widget_set_size_request(grade14, 20, 50);
+	gtk_widget_set_size_request(grade14, 150, 50);
 		
 	grade15 = gtk_button_new_with_label("grade15");
-	gtk_widget_set_size_request(grade15, 20, 50);
+	gtk_widget_set_size_request(grade15, 150, 50);
 		
 	grade16 = gtk_button_new_with_label("grade16");
-	gtk_widget_set_size_request(grade16, 20, 50);
+	gtk_widget_set_size_request(grade16, 150, 50);
 		
 
 ////////////////////////////
 	credit1 = gtk_button_new_with_label("credit1");
-	gtk_widget_set_size_request(credit1, 20, 50);
+	gtk_widget_set_size_request(credit1, 150, 50);
 
 	credit2 = gtk_button_new_with_label("credit2");
-	gtk_widget_set_size_request(credit2, 20, 50);
+	gtk_widget_set_size_request(credit2, 150, 50);
 
 	credit3 = gtk_button_new_with_label("credit3");
-	gtk_widget_set_size_request(credit3, 20, 50);
+	gtk_widget_set_size_request(credit3, 150, 50);
 
 	credit4 = gtk_button_new_with_label("credit4");
-	gtk_widget_set_size_request(credit4, 20, 50);
+	gtk_widget_set_size_request(credit4, 150, 50);
 
 	credit5 = gtk_button_new_with_label("credit5");
-	gtk_widget_set_size_request(credit5, 20, 50);
+	gtk_widget_set_size_request(credit5, 150, 50);
 
 	credit6 = gtk_button_new_with_label("credit6");
-	gtk_widget_set_size_request(credit6, 20, 50);
+	gtk_widget_set_size_request(credit6, 150, 50);
 
 	credit7 = gtk_button_new_with_label("credit7");
-	gtk_widget_set_size_request(credit7, 20, 50);
+	gtk_widget_set_size_request(credit7, 150, 50);
 
 	credit8 = gtk_button_new_with_label("credit8");
-	gtk_widget_set_size_request(credit8, 20, 50);
+	gtk_widget_set_size_request(credit8, 150, 50);
 
 	credit9 = gtk_button_new_with_label("credit9");
-	gtk_widget_set_size_request(credit9, 20, 50);
+	gtk_widget_set_size_request(credit9, 150, 50);
 
 	credit10 = gtk_button_new_with_label("credit10");
-	gtk_widget_set_size_request(credit10, 20, 50);
+	gtk_widget_set_size_request(credit10, 150, 50);
 
 	credit11 = gtk_button_new_with_label("credit11");
-	gtk_widget_set_size_request(credit11, 20, 50);
+	gtk_widget_set_size_request(credit11, 150, 50);
 
 	credit12 = gtk_button_new_with_label("credit12");
-	gtk_widget_set_size_request(credit12, 20, 50);
+	gtk_widget_set_size_request(credit12, 150, 50);
 
 	credit13 = gtk_button_new_with_label("credit13");
-	gtk_widget_set_size_request(credit13, 20, 50);
+	gtk_widget_set_size_request(credit13, 150, 50);
 
 	credit14 = gtk_button_new_with_label("credit14");
-	gtk_widget_set_size_request(credit14, 20, 50);
+	gtk_widget_set_size_request(credit14, 150, 50);
 
 	credit15 = gtk_button_new_with_label("credit15");
-	gtk_widget_set_size_request(credit15, 20, 50);
+	gtk_widget_set_size_request(credit15, 150, 50);
 
 	credit16 = gtk_button_new_with_label("credit16");
-	gtk_widget_set_size_request(credit16, 20, 50);
+	gtk_widget_set_size_request(credit16, 150, 50);
 
 //////////////////////////////////////
 
 	majer1 = gtk_button_new_with_label("majer1");
-	gtk_widget_set_size_request(majer1, 20, 50);
+	gtk_widget_set_size_request(majer1, 150, 50);
 
 	majer2 = gtk_button_new_with_label("majer2");
-	gtk_widget_set_size_request(majer2, 20, 50);
+	gtk_widget_set_size_request(majer2, 150, 50);
 
 	majer3 = gtk_button_new_with_label("majer3");
-	gtk_widget_set_size_request(majer3, 20, 50);
+	gtk_widget_set_size_request(majer3, 150, 50);
 
 	majer4 = gtk_button_new_with_label("majer4");
-	gtk_widget_set_size_request(majer4, 20, 50);
+	gtk_widget_set_size_request(majer4, 150, 50);
 
 	majer5 = gtk_button_new_with_label("majer5");
-	gtk_widget_set_size_request(majer5, 20, 50);
+	gtk_widget_set_size_request(majer5, 150, 50);
 
 	majer6 = gtk_button_new_with_label("majer6");
-	gtk_widget_set_size_request(majer6, 20, 50);
+	gtk_widget_set_size_request(majer6, 150, 50);
 
 	majer7 = gtk_button_new_with_label("majer7");
-	gtk_widget_set_size_request(majer7, 20, 50);
+	gtk_widget_set_size_request(majer7, 150, 50);
 
 	majer8 = gtk_button_new_with_label("majer8");
-	gtk_widget_set_size_request(majer8, 20, 50);
+	gtk_widget_set_size_request(majer8, 150, 50);
 
 	majer9 = gtk_button_new_with_label("majer9");
-	gtk_widget_set_size_request(majer9, 20, 50);
+	gtk_widget_set_size_request(majer9, 150, 50);
 
 	majer10 = gtk_button_new_with_label("majer10");
-	gtk_widget_set_size_request(majer10, 20, 50);
+	gtk_widget_set_size_request(majer10, 150, 50);
 
 	majer11 = gtk_button_new_with_label("majer11");
-	gtk_widget_set_size_request(majer11, 20, 50);
+	gtk_widget_set_size_request(majer11, 150, 50);
 
 	majer12 = gtk_button_new_with_label("majer12");
-	gtk_widget_set_size_request(majer12, 20, 50);
+	gtk_widget_set_size_request(majer12, 150, 50);
 
 	majer13 = gtk_button_new_with_label("majer13");
-	gtk_widget_set_size_request(majer13, 20, 50);
+	gtk_widget_set_size_request(majer13, 150, 50);
 
 	majer14 = gtk_button_new_with_label("majer14");
-	gtk_widget_set_size_request(majer14, 20, 50);
+	gtk_widget_set_size_request(majer14, 150, 50);
 
 	majer15 = gtk_button_new_with_label("majer15");
-	gtk_widget_set_size_request(majer15, 20, 50);
+	gtk_widget_set_size_request(majer15, 150, 50);
 
 	majer16 = gtk_button_new_with_label("majer16");
-	gtk_widget_set_size_request(majer16, 20, 50);
+	gtk_widget_set_size_request(majer16, 150, 50);
 
 
 
@@ -377,11 +372,15 @@ int main (int argc, char *argv[])
 	gtk_container_add(GTK_CONTAINER(hbox0),grade);
 	gtk_container_add(GTK_CONTAINER(hbox0),credit);
 	gtk_container_add(GTK_CONTAINER(hbox0),majer);
-	gtk_container_add(GTK_CONTAINER(hbox0),sub);
-	gtk_container_add(GTK_CONTAINER(hbox0),grade);
-	gtk_container_add(GTK_CONTAINER(hbox0),credit);
-	gtk_container_add(GTK_CONTAINER(hbox0),majer);
+
+	gtk_container_add(GTK_CONTAINER(hbox1),sub1);
+	gtk_container_add(GTK_CONTAINER(hbox1),grade1);
+	gtk_container_add(GTK_CONTAINER(hbox1),credit1);
+	gtk_container_add(GTK_CONTAINER(hbox1),majer1);
+
+	gtk_container_add(GTK_CONTAINER(vbox),hbox);
 	gtk_container_add(GTK_CONTAINER(vbox),hbox0);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox1);
 
 
 	/*-------------------------------------------------------*/
