@@ -8,14 +8,14 @@ GtkWidget* sub, *sub1, *sub2, *sub3, *sub4, *sub5, *sub6, *sub7, *sub8, *sub9, *
 
 GtkWidget* grade, *grade1, *grade2, *grade3, *grade4, *grade5, *grade6, *grade7, *grade8, *grade9, *grade10, *grade11, *grade12, *grade13, *grade14, *grade15, *grade16;
 
-GtkWidget* credit, *credit1, *credit2, *credit3, *credit4, *credit5, *credit6, *credit7, *credit8, *credit9, *credit10, *credit11, *credit12, *credit13, *credit14, *credit15, *credit1;
+GtkWidget* credit, *credit1, *credit2, *credit3, *credit4, *credit5, *credit6, *credit7, *credit8, *credit9, *credit10, *credit11, *credit12, *credit13, *credit14, *credit15, *credit16;
 
 GtkWidget* majer, *majer1, *majer2, *majer3, *majer4, *majer5, *majer6, *majer7, *majer8, *majer9, *majer10, *majer11, *majer12, *majer13, *majer14, *majer15, *majer16;
 
-char *sub[16];		//name of subject
-int grade[16]={0,};	//what i get point
-int credit[16]={0,};	//credit of subject (sth-point)
-int majer[16]={0,};	//is it majer or not
+char *subA[16];		//name of subject
+int gradeA[16]={0,};	//what i get point
+int creditA[16]={0,};	//credit of subject (sth-point)
+int majerA[16]={0,};	//is it majer or not
 char buf[30];	
 int counter = 0;	//the number of subject
 
@@ -49,10 +49,12 @@ void buttonClicked(GtkWidget *widget)
 }
 void clear()
 {
-	sub[16] = NULL;
-	grade[16]={0,};
-	credit[16]={0,};
-	majer[16]={0,};
+	int i;	
+	
+	for(i=0;i<16;i++){ *subA[i] = 0;}
+	for(i=0;i<16;i++){gradeA[16]=0;}
+	for(i=0;i<16;i++){creditA[16]=0;}
+	for(i=0;i<16;i++){majerA[16]=0;}
 
 	counter = 0;
 
@@ -70,7 +72,7 @@ void clear()
 	gtk_button_set_label(GTK_BUTTON(sub12),"sub12");
 	gtk_button_set_label(GTK_BUTTON(sub13),"sub13");
 	gtk_button_set_label(GTK_BUTTON(sub14),"sub14");
-	gtk_button_set_label(GTK_BUTTON(sub15),0"sub15");
+	gtk_button_set_label(GTK_BUTTON(sub15),"sub15");
 	gtk_button_set_label(GTK_BUTTON(sub16),"sub16");
 
 	gtk_button_set_label(GTK_BUTTON(grade1),"grd1");
