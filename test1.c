@@ -1,6 +1,6 @@
 #include <gtk/gtk.h>
 
-GtkWidget* window;		//프로그램을 작성하는데 필요한 전역변수들을 선언합니다.
+GtkWidget* window;	//프로그램을 작성하는데 필요한 전역변수들을 선언합니다.
 GtkWidget* label;
 GtkWidget* vbox;
 GtkWidget* hbox, *hbox0, *hbox1, *hbox2, *hbox3, *hbox4, *hbox5, *hbox6, *hbox7, *hbox8;
@@ -12,12 +12,12 @@ GtkWidget* credit, *credit1, *credit2, *credit3, *credit4, *credit5, *credit6, *
 
 GtkWidget* majer, *majer1, *majer2, *majer3, *majer4, *majer5, *majer6, *majer7, *majer8, *majer9, *majer10, *majer11, *majer12, *majer13, *majer14, *majer15, *majer16;
 
-char *sub[16];
-int grade[16]={0,};
-int credit[16]={0,};
-int majer[16]={0,};
-char buf[30];
-int counter = 0;
+char *sub[16];		//name of subject
+int grade[16]={0,};	//what i get point
+int credit[16]={0,};	//credit of subject (sth-point)
+int majer[16]={0,};	//is it majer or not
+char buf[30];	
+int counter = 0;	//the number of subject
 
 void buttonClicked(GtkWidget *widget)
 {
@@ -56,7 +56,7 @@ void clear()
 
 	counter = 0;
 
-	gtk_button_set_label(GTK_BUTTON(sub1),"sub1");
+	gtk_button_set_label(GTK_BUTTON(sub1),"sub1");	//button setting
 	gtk_button_set_label(GTK_BUTTON(sub2),"sub2");
 	gtk_button_set_label(GTK_BUTTON(sub3),"sub3");
 	gtk_button_set_label(GTK_BUTTON(sub4),"sub4");
@@ -70,7 +70,7 @@ void clear()
 	gtk_button_set_label(GTK_BUTTON(sub12),"sub12");
 	gtk_button_set_label(GTK_BUTTON(sub13),"sub13");
 	gtk_button_set_label(GTK_BUTTON(sub14),"sub14");
-	gtk_button_set_label(GTK_BUTTON(sub15),"sub15");
+	gtk_button_set_label(GTK_BUTTON(sub15),0"sub15");
 	gtk_button_set_label(GTK_BUTTON(sub16),"sub16");
 
 	gtk_button_set_label(GTK_BUTTON(grade1),"grd1");
@@ -153,7 +153,7 @@ int main (int argc, char *argv[])
 
 	/*-------------------------------------------------------*/
 	//make label
-	sub = gtk_label_new("subject");
+	sub = gtk_label_new("subject");	//creating and setting size of button
 	gtk_widget_set_size_request(sub, 200, 50);
 
 	grade = gtk_label_new("grade");

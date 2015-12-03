@@ -140,14 +140,15 @@ int main (int argc, char *argv[])
 	/*-------------------------------------------------------*/
 	//v박스를 만듭니다.
 	vbox = gtk_vbox_new(TRUE, 0);
-	hbox0 = gtk_vbox_new(TRUE, 0);
-	hbox1 = gtk_vbox_new(TRUE, 0);
-	hbox2 = gtk_vbox_new(TRUE, 0);
-	hbox3 = gtk_vbox_new(TRUE, 0);
-	hbox4 = gtk_vbox_new(TRUE, 0);
-	hbox5 = gtk_vbox_new(TRUE, 0);
-	hbox6 = gtk_vbox_new(TRUE, 0);
-	hbox7 = gtk_vbox_new(TRUE, 0);
+	hbox = gtk_hbox_new(TRUE, 0);
+	hbox0 = gtk_hbox_new(TRUE, 0);
+	hbox1 = gtk_hbox_new(TRUE, 0);
+	hbox2 = gtk_hbox_new(TRUE, 0);
+	hbox3 = gtk_hbox_new(TRUE, 0);
+	hbox4 = gtk_hbox_new(TRUE, 0);
+	hbox5 = gtk_hbox_new(TRUE, 0);
+	hbox6 = gtk_hbox_new(TRUE, 0);
+	hbox7 = gtk_hbox_new(TRUE, 0);
 
 
 	/*-------------------------------------------------------*/
