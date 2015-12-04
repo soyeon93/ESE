@@ -16,18 +16,471 @@ GtkWidget* majer, *majer1, *majer2, *majer3, *majer4, *majer5, *majer6, *majer7,
 
 GtkWidget* calculate, *empty, *empty1;
 char *subA[16];		//name of subject
-int gradeA[16]={0,};	//what i get point
+double gradeA[16]={0,};	//what i get point
 int creditA[16]={0,};	//credit of subject (sth-point)
 int majerA[16]={0,};	//is it majer or not
-char buf[30];	
+char buf[16]={0,};	
 int counter = 0;	//the number of subject
 
+
+void setGrade(int n)
+{
+	if(buf[n]==0)
+		{
+			gradeA[n]=0;
+			buf[n]=1;
+		}
+		else
+		{
+			if(gradeA[n] == 0)
+			{
+				gradeA[n]=1;
+			}
+			else
+			{	
+				gradeA[n] +=0.5;				
+			}
+			if(gradeA[n]==5.0)
+			{
+				gradeA[n]=0;
+			}
+		}
+	
+
+		if(gradeA[n]==0)
+		{
+			if(n==1)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade1),"F");
+			}
+			else if(n==2)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade2),"F");
+			}
+			else if(n==3)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade3),"F");
+			}
+			else if(n==4)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade4),"F");
+			}
+			else if(n==5)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade5),"F");
+			}
+			else if(n==6)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade6),"F");
+			}
+			else if(n==7)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade7),"F");
+			}
+			else if(n==8)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade8),"F");
+			}
+			else if(n==9)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade9),"F");
+			}
+			else if(n==10)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade10),"F");
+			}	
+		}
+		else if(gradeA[n]==1)
+		{
+			if(n==1)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade1),"D");
+			}
+			else if(n==2)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade2),"D");
+			}
+			else if(n==3)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade3),"D");
+			}
+			else if(n==4)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade4),"D");
+			}
+			else if(n==5)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade5),"D");
+			}
+			else if(n==6)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade6),"D");
+			}
+			else if(n==7)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade7),"D");
+			}
+			else if(n==8)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade8),"D");
+			}
+			else if(n==9)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade9),"D");
+			}
+			else if(n==10)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade10),"D");
+			}
+		}
+		else if(gradeA[n]==1.5)
+		{
+			if(n==1)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade1),"D+");
+			}
+			else if(n==2)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade2),"D+");
+			}
+			else if(n==3)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade3),"D+");
+			}
+			else if(n==4)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade4),"D+");
+			}
+			else if(n==5)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade5),"D+");
+			}
+			else if(n==6)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade6),"D+");
+			}
+			else if(n==7)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade7),"D+");
+			}
+			else if(n==8)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade8),"D+");
+			}
+			else if(n==9)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade9),"D+");
+			}
+			else if(n==10)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade10),"D+");
+			}
+		}
+		else if(gradeA[n]==2)
+		{
+			if(n==1)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade1),"C");
+			}
+			else if(n==2)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade2),"C");
+			}
+			else if(n==3)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade3),"C");
+			}
+			else if(n==4)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade4),"C");
+			}
+			else if(n==5)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade5),"C");
+			}
+			else if(n==6)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade6),"C");
+			}
+			else if(n==7)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade7),"C");
+			}
+			else if(n==8)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade8),"C");
+			}
+			else if(n==9)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade9),"C");
+			}
+			else if(n==10)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade10),"C");
+			}
+		}
+		else if(gradeA[n]==2.5)
+		{
+			if(n==1)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade1),"C+");
+			}
+			else if(n==2)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade2),"C+");
+			}
+			else if(n==3)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade3),"C+");
+			}
+			else if(n==4)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade4),"C+");
+			}
+			else if(n==5)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade5),"C+");
+			}
+			else if(n==6)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade6),"C+");
+			}
+			else if(n==7)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade7),"C+");
+			}
+			else if(n==8)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade8),"C+");
+			}
+			else if(n==9)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade9),"C+");
+			}
+			else if(n==10)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade10),"C+");
+			}
+		}
+		else if(gradeA[n]==3)
+		{
+			if(n==1)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade1),"B");
+			}
+			else if(n==2)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade2),"B");
+			}
+			else if(n==3)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade3),"B");
+			}
+			else if(n==4)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade4),"B");
+			}
+			else if(n==5)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade5),"B");
+			}
+			else if(n==6)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade6),"B");
+			}
+			else if(n==7)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade7),"B");
+			}
+			else if(n==8)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade8),"B");
+			}
+			else if(n==9)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade9),"B");
+			}
+			else if(n==10)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade10),"B");
+			}
+		}
+		else if(gradeA[n]==3.5)
+		{
+			if(n==1)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade1),"B+");
+			}
+			else if(n==2)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade2),"B+");
+			}
+			else if(n==3)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade3),"B+");
+			}
+			else if(n==4)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade4),"B+");
+			}
+			else if(n==5)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade5),"B+");
+			}
+			else if(n==6)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade6),"B+");
+			}
+			else if(n==7)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade7),"B+");
+			}
+			else if(n==8)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade8),"B+");
+			}
+			else if(n==9)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade9),"B+");
+			}
+			else if(n==10)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade10),"B+");
+			}
+		}
+		else if(gradeA[n]==4)
+		{
+			if(n==1)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade1),"A");
+			}
+			else if(n==2)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade2),"A");
+			}
+			else if(n==3)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade3),"A");
+			}
+			else if(n==4)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade4),"A");
+			}
+			else if(n==5)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade5),"A");
+			}
+			else if(n==6)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade6),"A");
+			}
+			else if(n==7)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade7),"A");
+			}
+			else if(n==8)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade8),"A");
+			}
+			else if(n==9)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade9),"A");
+			}
+			else if(n==10)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade10),"A");
+			}
+		}
+		else if(gradeA[n]==4.5)
+		{
+			if(n==1)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade1),"A+");
+			}
+			else if(n==2)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade2),"A+");
+			}
+			else if(n==3)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade3),"A+");
+			}
+			else if(n==4)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade4),"A+");
+			}
+			else if(n==5)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade5),"A+");
+			}
+			else if(n==6)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade6),"A+");
+			}
+			else if(n==7)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade7),"A+");
+			}
+			else if(n==8)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade8),"A+");
+			}
+			else if(n==9)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade9),"A+");
+			}
+			else if(n==10)
+			{
+				gtk_button_set_label(GTK_BUTTON(grade10),"A+");
+			}
+		}
+}
 void buttonClicked(GtkWidget *widget)
 {
 
 	if(widget == calculate)
 	{
-		counter++;
+		//calculate
+	}
+	else if(widget == grade1)
+	{
+		setGrade(1);
+	}
+	else if(widget == grade2)
+	{
+		setGrade(2);
+	}
+	else if(widget == grade3)
+	{
+		setGrade(3);
+	}
+	else if(widget == grade4)
+	{
+		setGrade(4);
+	}
+	else if(widget == grade5)
+	{
+		setGrade(5);
+	}
+	else if(widget == grade6)
+	{
+		setGrade(6);
+	}
+	else if(widget == grade7)
+	{
+		setGrade(7);
+	}
+	else if(widget == grade8)
+	{
+		setGrade(8);
+	}
+	else if(widget == grade9)
+	{
+		setGrade(9);
+	}
+	else if(widget == grade10)
+	{
+		setGrade(10);
 	}
 	/*else if(widget == buttonReset)
 	{
@@ -459,10 +912,17 @@ int main (int argc, char *argv[])
 
 	/*-------------------------------------------------------*/
 	//버튼이 클릭될경우 buttonClocked 함수를 callback합니다.
-	/*g_signal_connect(G_OBJECT(buttonStart), "clicked", G_CALLBACK(buttonClicked), NULL);
-	g_signal_connect(G_OBJECT(buttonStop) , "clicked", G_CALLBACK(buttonClicked), NULL);
-	g_signal_connect(G_OBJECT(buttonReset), "clicked", G_CALLBACK(buttonClicked), NULL);*/
-	
+	g_signal_connect(G_OBJECT(grade1), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(grade2), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(grade3), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(grade4), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(grade5), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(grade6), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(grade7), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(grade8), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(grade9), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(grade10), "clicked", G_CALLBACK(buttonClicked), NULL);
+
 	gtk_container_add(GTK_CONTAINER(window),vbox);
 	//만들어둔 창에 v박스를 포함시킵니다.
 
