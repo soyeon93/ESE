@@ -19,16 +19,18 @@ char *subA[16];		//name of subject
 double gradeA[16]={0,};	//what i get point
 int creditA[16]={0,};	//credit of subject (sth-point)
 int majerA[16]={0,};	//is it majer or not
-char buf[16]={0,};	
+int buf_grd[16]={0,};
+int buf_crd[16]={0,};
+int buf_maj[16]={0,};	
 int counter = 0;	//the number of subject
 
 
 void setGrade(int n)
 {
-	if(buf[n]==0)
+	if(buf_grd[n]==0)
 		{
 			gradeA[n]=0;
-			buf[n]=1;
+			buf_grd[n]=1;
 		}
 		else
 		{
@@ -435,6 +437,148 @@ void setGrade(int n)
 			}
 		}
 }
+void setCredit(int n)
+{
+	if(buf_crd[n]==0)
+	{
+		buf_crd[n]=1;
+	}
+	creditA[n] +=1;
+	creditA[n] = creditA[n]%4;
+	if(creditA[n]==0)
+	{
+		creditA[n]=1;
+	}
+	if(creditA[n]==1)
+	{
+		if(n==1)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit1),"1");
+		}
+		else if(n==2)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit2),"1");
+		}
+		else if(n==3)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit3),"1");
+		}
+		else if(n==4)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit4),"1");
+		}
+		else if(n==5)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit5),"1");
+		}
+		else if(n==6)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit6),"1");
+		}
+		else if(n==7)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit7),"1");
+		}
+		else if(n==8)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit8),"1");
+		}
+		else if(n==9)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit9),"1");
+		}
+		else if(n==10)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit10),"1");
+		}
+	}
+	else if(creditA[n]==2)
+	{
+		if(n==1)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit1),"2");
+		}
+		else if(n==2)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit2),"2");
+		}
+		else if(n==3)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit3),"2");
+		}
+		else if(n==4)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit4),"2");
+		}
+		else if(n==5)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit5),"2");
+		}
+		else if(n==6)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit6),"2");
+		}
+		else if(n==7)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit7),"2");
+		}
+		else if(n==8)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit8),"2");
+		}
+		else if(n==9)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit9),"2");
+		}
+		else if(n==10)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit10),"2");
+		}
+	}
+	else if(creditA[n]==3)
+	{
+		if(n==1)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit1),"3");
+		}
+		else if(n==2)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit2),"3");
+		}
+		else if(n==3)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit3),"3");
+		}
+		else if(n==4)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit4),"3");
+		}
+		else if(n==5)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit5),"3");
+		}
+		else if(n==6)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit6),"3");
+		}
+		else if(n==7)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit7),"3");
+		}
+		else if(n==8)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit8),"3");
+		}
+		else if(n==9)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit9),"3");
+		}
+		else if(n==10)
+		{
+			gtk_button_set_label(GTK_BUTTON(credit10),"3");
+		}
+	}
+}
 void buttonClicked(GtkWidget *widget)
 {
 
@@ -481,6 +625,86 @@ void buttonClicked(GtkWidget *widget)
 	else if(widget == grade10)
 	{
 		setGrade(10);
+	}
+	else if(widget == credit1)
+	{
+		setCredit(1);
+	}
+	else if(widget == credit2)
+	{
+		setCredit(2);
+	}
+	else if(widget == credit3)
+	{
+		setCredit(3);
+	}
+	else if(widget == credit4)
+	{
+		setCredit(4);
+	}
+	else if(widget == credit5)
+	{
+		setCredit(5);
+	}
+	else if(widget == credit6)
+	{
+		setCredit(6);
+	}
+	else if(widget == credit7)
+	{
+		setCredit(7);
+	}
+	else if(widget == credit8)
+	{
+		setCredit(8);
+	}
+	else if(widget == credit9)
+	{
+		setCredit(9);
+	}
+	else if(widget == credit10)
+	{
+		setCredit(10);
+	}
+	else if(widget == majer1)
+	{
+		setMajer(1);
+	}
+	else if(widget == majer2)
+	{
+		setMajer(2);
+	}
+	else if(widget == majer3)
+	{
+		setMajer(3);
+	}
+	else if(widget == majer4)
+	{
+		setMajer(4);
+	}
+	else if(widget == majer5)
+	{
+		setMajer(5);
+	}
+	else if(widget == majer6)
+	{
+		setMajer(6);
+	}
+	else if(widget == majer7)
+	{
+		setMajer(7);
+	}
+	else if(widget == majer8)
+	{
+		setMajer(8);
+	}
+	else if(widget == majer9)
+	{
+		setMajer(9);
+	}
+	else if(widget == majer10)
+	{
+		setMajer(10);
 	}
 	/*else if(widget == buttonReset)
 	{
@@ -923,6 +1147,28 @@ int main (int argc, char *argv[])
 	g_signal_connect(G_OBJECT(grade9), "clicked", G_CALLBACK(buttonClicked), NULL);
 	g_signal_connect(G_OBJECT(grade10), "clicked", G_CALLBACK(buttonClicked), NULL);
 
+	g_signal_connect(G_OBJECT(credit1), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(credit2), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(credit3), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(credit4), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(credit5), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(credit6), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(credit7), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(credit8), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(credit9), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(credit10), "clicked", G_CALLBACK(buttonClicked), NULL);
+
+	g_signal_connect(G_OBJECT(majer1), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer2), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer3), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer4), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer5), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer6), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer7), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer8), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer9), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer10), "clicked", G_CALLBACK(buttonClicked), NULL);
+
 	gtk_container_add(GTK_CONTAINER(window),vbox);
 	//만들어둔 창에 v박스를 포함시킵니다.
 
@@ -932,25 +1178,3 @@ int main (int argc, char *argv[])
 
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
