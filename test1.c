@@ -4,7 +4,7 @@
 
 GtkWidget* window;	//프로그램을 작성하는데 필요한 전역변수들을 선언합니다.
 GtkWidget* label;
-GtkWidget* vbox, *vbox1;
+GtkWidget* vbox, *vbox1, *vbox2;
 GtkWidget* hbox, *hbox0, *hbox1, *hbox2, *hbox3, *hbox4, *hbox5, *hbox6, *hbox7; GtkWidget* hbox8, *hbox9, *hbox10;
 GtkWidget* sub, *sub1, *sub2, *sub3, *sub4, *sub5, *sub6, *sub7, *sub8, *sub9, *sub10, *sub11, *sub12, *sub13, *sub14, *sub15, *sub16;
 
@@ -141,6 +141,8 @@ int main (int argc, char *argv[])
 	/*-------------------------------------------------------*/
 	//v박스를 만듭니다.
 	vbox = gtk_vbox_new(TRUE, 0);
+	vbox1 = gtk_vbox_new(TRUE, 0);
+	vbox2 = gtk_vbox_new(TRUE, 0);
 	hbox = gtk_hbox_new(TRUE, 0);
 	hbox0 = gtk_hbox_new(TRUE, 0);
 	hbox1 = gtk_hbox_new(TRUE, 0);
@@ -150,6 +152,9 @@ int main (int argc, char *argv[])
 	hbox5 = gtk_hbox_new(TRUE, 0);
 	hbox6 = gtk_hbox_new(TRUE, 0);
 	hbox7 = gtk_hbox_new(TRUE, 0);
+	hbox8 = gtk_hbox_new(TRUE, 0);
+	hbox9 = gtk_hbox_new(TRUE, 0);
+	hbox10 = gtk_hbox_new(TRUE, 0);
 
 
 	/*-------------------------------------------------------*/
@@ -167,9 +172,9 @@ int main (int argc, char *argv[])
 	gtk_widget_set_size_request(majer, X, Y);
 
 	empty = gtk_label_new("");
-	gtk_widget_set_size_request(majer, X, Y);
+	gtk_widget_set_size_request(empty, X, Y);
 	empty1 = gtk_label_new("");
-	gtk_widget_set_size_request(majer, X, Y);
+	gtk_widget_set_size_request(empty1, X, Y);
 
 	calculate = gtk_button_new_with_label("calculate");
 	gtk_widget_set_size_request(grade1, X, Y);
@@ -446,10 +451,10 @@ int main (int argc, char *argv[])
 	gtk_container_add(GTK_CONTAINER(vbox),hbox4);
 	gtk_container_add(GTK_CONTAINER(vbox),hbox5);
 	gtk_container_add(GTK_CONTAINER(vbox),hbox6);
-	gtk_container_add(GTK_CONTAINER(vbox1),hbox7);
-	gtk_container_add(GTK_CONTAINER(vbox1),hbox8);
-	gtk_container_add(GTK_CONTAINER(vbox1),hbox9);
-	gtk_container_add(GTK_CONTAINER(vbox1),hbox10);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox7);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox8);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox9);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox10);
 
 
 	/*-------------------------------------------------------*/
@@ -459,7 +464,6 @@ int main (int argc, char *argv[])
 	g_signal_connect(G_OBJECT(buttonReset), "clicked", G_CALLBACK(buttonClicked), NULL);*/
 	
 	gtk_container_add(GTK_CONTAINER(window),vbox);
-	gtk_container_add(GTK_CONTAINER(window),vbox1);
 	//만들어둔 창에 v박스를 포함시킵니다.
 
 	gtk_widget_show_all(window);	//창에 있는 모든 위젯들을 보여줍니다.
