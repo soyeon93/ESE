@@ -666,6 +666,46 @@ void buttonClicked(GtkWidget *widget)
 	{
 		setCredit(10);
 	}
+	else if(widget == majer1)
+	{
+		setMajer(1);
+	}
+	else if(widget == majer2)
+	{
+		setMajer(2);
+	}
+	else if(widget == majer3)
+	{
+		setMajer(3);
+	}
+	else if(widget == majer4)
+	{
+		setMajer(4);
+	}
+	else if(widget == majer5)
+	{
+		setMajer(5);
+	}
+	else if(widget == majer6)
+	{
+		setMajer(6);
+	}
+	else if(widget == majer7)
+	{
+		setMajer(7);
+	}
+	else if(widget == majer8)
+	{
+		setMajer(8);
+	}
+	else if(widget == majer9)
+	{
+		setMajer(9);
+	}
+	else if(widget == majer10)
+	{
+		setMajer(10);
+	}
 	/*else if(widget == buttonReset)
 	{
 		//reset버튼을 눌럿을시 stop경우일때만 reset을 시켜줍니다.
@@ -1117,6 +1157,17 @@ int main (int argc, char *argv[])
 	g_signal_connect(G_OBJECT(credit8), "clicked", G_CALLBACK(buttonClicked), NULL);
 	g_signal_connect(G_OBJECT(credit9), "clicked", G_CALLBACK(buttonClicked), NULL);
 	g_signal_connect(G_OBJECT(credit10), "clicked", G_CALLBACK(buttonClicked), NULL);
+
+	g_signal_connect(G_OBJECT(majer1), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer2), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer3), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer4), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer5), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer6), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer7), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer8), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer9), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(majer10), "clicked", G_CALLBACK(buttonClicked), NULL);
 
 	gtk_container_add(GTK_CONTAINER(window),vbox);
 	//만들어둔 창에 v박스를 포함시킵니다.

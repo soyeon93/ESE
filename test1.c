@@ -579,6 +579,10 @@ void setCredit(int n)
 		}
 	}
 }
+void setMajer(int n)
+{
+	
+}
 void buttonClicked(GtkWidget *widget)
 {
 
