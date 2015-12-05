@@ -26,7 +26,7 @@ int counter = 0;	//the number of subject
 double total_score=0;
 void function_calculate()
 {
-	double score=0;
+	int score=0;
 	char _total_score[1]={0};
 	int i;
 	int cnt=0;
@@ -34,12 +34,12 @@ void function_calculate()
 	{
 		if(buf_grd[i] == 1 && buf_crd[i] ==1 && buf_maj[i] == 1)
 		{
-			score = gradeA[i]*creditA[i];
-			total_score +=score;
+			score += gradeA[i]*creditA[i];
+			//total_score +=score;
 			cnt++;	
 		}
 	}
-	total_score = (total_score / cnt)+(total_score % cnt);
+	total_score = (score / cnt)+(score % cnt);
 	sprintf(_total_score,"%f",total_score);
 	gtk_label_set_text(GTK_LABEL(result),_total_score);
 }

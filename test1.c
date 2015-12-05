@@ -22,6 +22,47 @@ int majerA[16]={0,};	//is it majer or not
 int buf_grd[16]={0,};
 int buf_crd[16]={0,};
 int buf_maj[16]={0,};	
+
+char *sub_fresh_first[16];
+int grade_fresh_first[16]={0,};
+int credit_fresh_first[16]={0,};
+int majer_fresh_first[16]={0,};  
+
+char *sub_fresh_second[16];
+int grade_fresh_second[16]={0,};
+int credit_fresh_second[16]={0,};
+int majer_fresh_second[16]={0,};  
+
+char *sub_sophomore_first[16];
+int grade_sophomore_first[16]={0,};
+int credit_sophomore_first[16]={0,};
+int majer_sophomore_first[16]={0,};  
+
+char *sub_sophomore_second[16];
+int grade_sophomore_second[16]={0,};
+int credit_sophomore_second[16]={0,};
+int majer_sophomore_second[16]={0,};  
+
+char *sub_junior_first[16];
+int grade_junior_first[16]={0,};
+int credit_junior_first[16]={0,};
+int majer_junior_first[16]={0,};  
+
+char *sub_junior_second[16];
+int grade_junior_second[16]={0,};
+int credit_junior_second[16]={0,};
+int majer_junior_second[16]={0,};  
+
+char *sub_senior_first[16];
+int grade_senior_first[16]={0,};
+int credit_senior_first[16]={0,};
+int majer_senior_first[16]={0,};  
+
+char *sub_senior_second[16];
+int grade_senior_second[16]={0,};
+int credit_senior_second[16]={0,};
+int majer_senior_second[16]={0,};  
+
 int counter = 0;	//the number of subject
 double total_score=0;
 void function_calculate()
