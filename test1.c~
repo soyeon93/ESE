@@ -1,11 +1,11 @@
 #include <gtk/gtk.h>
-#define X 200 //axis x
+#define X 150 //axis x
 #define Y 30	//axis y
 
 GtkWidget* window;	//프로그램을 작성하는데 필요한 전역변수들을 선언합니다.
 GtkWidget* label;
 GtkWidget* vbox, *vbox1, *vbox2;
-GtkWidget* hbox, *hbox0, *hbox1, *hbox2, *hbox3, *hbox4, *hbox5, *hbox6, *hbox7,* hbox8, *hbox9, *hbox10, *hbox_first, *hbox_second, *hbox_label;
+GtkWidget* hbox, *hbox0, *hbox1, *hbox2, *hbox3, *hbox4, *hbox5, *hbox6, *hbox7,* hbox8, *hbox9, *hbox10, *hbox_fresh, *hbox_sophomore, *hbox_junior, *hbox_senior, *hbox_label;
 GtkWidget* sub, *sub1, *sub2, *sub3, *sub4, *sub5, *sub6, *sub7, *sub8, *sub9, *sub10, *sub11, *sub12, *sub13, *sub14, *sub15, *sub16;
 
 GtkWidget* grade, *grade1, *grade2, *grade3, *grade4, *grade5, *grade6, *grade7, *grade8, *grade9, *grade10, *grade11, *grade12, *grade13, *grade14, *grade15, *grade16;
@@ -88,6 +88,13 @@ void save_fresh_first()
 		majer_fresh_first[n]=majerA[n];  
 	}
 	gtk_button_set_label(GTK_BUTTON(fresh_first),"saved_fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_fresh_second()
 {
@@ -109,7 +116,14 @@ void save_fresh_second()
 	{
 		majer_fresh_second[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
 	gtk_button_set_label(GTK_BUTTON(fresh_second),"saved_fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_sophomore_first()
 {
@@ -130,7 +144,14 @@ void save_sophomore_first()
 	{
 		majer_sophomore_first[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
 	gtk_button_set_label(GTK_BUTTON(sophomore_first),"saved_sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_sophomore_second()
 {
@@ -151,7 +172,14 @@ void save_sophomore_second()
 	{
 		majer_sophomore_second[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
 	gtk_button_set_label(GTK_BUTTON(sophomore_second),"saved_sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_junior_first()
 {
@@ -172,7 +200,14 @@ void save_junior_first()
 	{
 		majer_junior_first[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
 	gtk_button_set_label(GTK_BUTTON(junior_first),"saved_junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_junior_second()
 {
@@ -193,7 +228,14 @@ void save_junior_second()
 	{
 		majer_junior_second[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
 	gtk_button_set_label(GTK_BUTTON(junior_second),"saved_junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_senior_first()
 {
@@ -214,7 +256,14 @@ void save_senior_first()
 	{
 		majer_senior_first[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
 	gtk_button_set_label(GTK_BUTTON(senior_first),"saved_senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_senior_second()
 {
@@ -235,6 +284,13 @@ void save_senior_second()
 	{
 		majer_senior_second[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
 	gtk_button_set_label(GTK_BUTTON(senior_second),"saved_senior_second");
 
 }
@@ -1172,8 +1228,10 @@ int main (int argc, char *argv[])
 	hbox8 = gtk_hbox_new(TRUE, 0);
 	hbox9 = gtk_hbox_new(TRUE, 0);
 	hbox10 = gtk_hbox_new(TRUE, 0);
-	hbox_first = gtk_hbox_new(TRUE, 0);
-	hbox_second = gtk_hbox_new(TRUE, 0);
+	hbox_fresh = gtk_hbox_new(TRUE, 0);
+	hbox_sophomore = gtk_hbox_new(TRUE, 0);
+	hbox_junior = gtk_hbox_new(TRUE, 0);
+	hbox_senior = gtk_hbox_new(TRUE, 0);
 	hbox_label = gtk_hbox_new(TRUE, 0);
 
 
@@ -1493,15 +1551,15 @@ int main (int argc, char *argv[])
 	gtk_container_add(GTK_CONTAINER(hbox10),credit10);
 	gtk_container_add(GTK_CONTAINER(hbox10),majer10);
 
-	gtk_container_add(GTK_CONTAINER(hbox_first),fresh_first);
-	gtk_container_add(GTK_CONTAINER(hbox_first),sophomore_first);
-	gtk_container_add(GTK_CONTAINER(hbox_first),junior_first);
-	gtk_container_add(GTK_CONTAINER(hbox_first),senior_first);
+	gtk_container_add(GTK_CONTAINER(hbox_fresh),fresh_first);
+	gtk_container_add(GTK_CONTAINER(hbox_sophomore),sophomore_first);
+	gtk_container_add(GTK_CONTAINER(hbox_junior),junior_first);
+	gtk_container_add(GTK_CONTAINER(hbox_senior),senior_first);
 
-	gtk_container_add(GTK_CONTAINER(hbox_second),fresh_second);
-	gtk_container_add(GTK_CONTAINER(hbox_second),sophomore_second);
-	gtk_container_add(GTK_CONTAINER(hbox_second),junior_second);
-	gtk_container_add(GTK_CONTAINER(hbox_second),senior_second);
+	gtk_container_add(GTK_CONTAINER(hbox_fresh),fresh_second);
+	gtk_container_add(GTK_CONTAINER(hbox_sophomore),sophomore_second);
+	gtk_container_add(GTK_CONTAINER(hbox_junior),junior_second);
+	gtk_container_add(GTK_CONTAINER(hbox_senior),senior_second);
 
 	gtk_container_add(GTK_CONTAINER(hbox_label),info);
 
@@ -1518,8 +1576,10 @@ int main (int argc, char *argv[])
 	gtk_container_add(GTK_CONTAINER(vbox),hbox9);
 	gtk_container_add(GTK_CONTAINER(vbox),hbox10);
 	gtk_container_add(GTK_CONTAINER(vbox),hbox_label);
-	gtk_container_add(GTK_CONTAINER(vbox),hbox_first);
-	gtk_container_add(GTK_CONTAINER(vbox),hbox_second);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox_fresh);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox_sophomore);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox_junior);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox_senior);
 
 
 

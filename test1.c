@@ -88,6 +88,13 @@ void save_fresh_first()
 		majer_fresh_first[n]=majerA[n];  
 	}
 	gtk_button_set_label(GTK_BUTTON(fresh_first),"saved_fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_fresh_second()
 {
@@ -109,7 +116,14 @@ void save_fresh_second()
 	{
 		majer_fresh_second[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
 	gtk_button_set_label(GTK_BUTTON(fresh_second),"saved_fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_sophomore_first()
 {
@@ -130,7 +144,14 @@ void save_sophomore_first()
 	{
 		majer_sophomore_first[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
 	gtk_button_set_label(GTK_BUTTON(sophomore_first),"saved_sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_sophomore_second()
 {
@@ -151,7 +172,14 @@ void save_sophomore_second()
 	{
 		majer_sophomore_second[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
 	gtk_button_set_label(GTK_BUTTON(sophomore_second),"saved_sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_junior_first()
 {
@@ -172,7 +200,14 @@ void save_junior_first()
 	{
 		majer_junior_first[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
 	gtk_button_set_label(GTK_BUTTON(junior_first),"saved_junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_junior_second()
 {
@@ -193,7 +228,14 @@ void save_junior_second()
 	{
 		majer_junior_second[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
 	gtk_button_set_label(GTK_BUTTON(junior_second),"saved_junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_senior_first()
 {
@@ -214,7 +256,14 @@ void save_senior_first()
 	{
 		majer_senior_first[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
 	gtk_button_set_label(GTK_BUTTON(senior_first),"saved_senior_first");
+	gtk_button_set_label(GTK_BUTTON(senior_second),"senior_second");
 }
 void save_senior_second()
 {
@@ -235,6 +284,13 @@ void save_senior_second()
 	{
 		majer_senior_second[n]=majerA[n];  
 	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"sophomore_second");
+	gtk_button_set_label(GTK_BUTTON(junior_first),"junior_first");
+	gtk_button_set_label(GTK_BUTTON(junior_second),"junior_second");
+	gtk_button_set_label(GTK_BUTTON(senior_first),"senior_first");
 	gtk_button_set_label(GTK_BUTTON(senior_second),"saved_senior_second");
 
 }
