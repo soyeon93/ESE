@@ -5,7 +5,7 @@
 GtkWidget* window;	//프로그램을 작성하는데 필요한 전역변수들을 선언합니다.
 GtkWidget* label;
 GtkWidget* vbox, *vbox1, *vbox2;
-GtkWidget* hbox, *hbox0, *hbox1, *hbox2, *hbox3, *hbox4, *hbox5, *hbox6, *hbox7,* hbox8, *hbox9, *hbox10, *hbox_first, *hbox_second, *hbox_label;
+GtkWidget* hbox, *hbox0, *hbox1, *hbox2, *hbox3, *hbox4, *hbox5, *hbox6, *hbox7,* hbox8, *hbox9, *hbox10, *hbox_fresh, *hbox_sophomore, *hbox_junior, *hbox_senior, *hbox_label;
 GtkWidget* sub, *sub1, *sub2, *sub3, *sub4, *sub5, *sub6, *sub7, *sub8, *sub9, *sub10, *sub11, *sub12, *sub13, *sub14, *sub15, *sub16;
 
 GtkWidget* grade, *grade1, *grade2, *grade3, *grade4, *grade5, *grade6, *grade7, *grade8, *grade9, *grade10, *grade11, *grade12, *grade13, *grade14, *grade15, *grade16;
@@ -67,6 +67,179 @@ int majer_senior_second[16]={0,};
 
 int counter = 0;	//the number of subject
 double total_score=0;
+//fresh_first, *fresh_second, *sophomore_first, *sophomore_second, *junior_first, *junior_second, *senior_first, *senior_second
+void save_fresh_first()
+{
+	int n;
+	for(n=0;n<16;n++)
+	{
+ 		sub_fresh_first[n] = subA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		grade_fresh_first[n]= gradeA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		credit_fresh_first[n]=creditA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		majer_fresh_first[n]=majerA[n];  
+	}
+	gtk_button_set_label(GTK_BUTTON(fresh_first),"saved_fresh_first");
+}
+void save_fresh_second()
+{
+
+	int n;
+	for(n=0;n<16;n++)
+	{
+ 		sub_fresh_second[n] = subA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		grade_fresh_second[n]= gradeA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		credit_fresh_second[n]=creditA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		majer_fresh_second[n]=majerA[n];  
+	}
+	gtk_button_set_label(GTK_BUTTON(fresh_second),"saved_fresh_second");
+}
+void save_sophomore_first()
+{
+	int n;
+	for(n=0;n<16;n++)
+	{
+ 		sub_sophomore_first[n] = subA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		grade_sophomore_first[n]= gradeA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		credit_sophomore_first[n]=creditA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		majer_sophomore_first[n]=majerA[n];  
+	}
+	gtk_button_set_label(GTK_BUTTON(sophomore_first),"saved_sophomore_first");
+}
+void save_sophomore_second()
+{
+	int n;
+	for(n=0;n<16;n++)
+	{
+ 		sub_sophomore_second[n] = subA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		grade_sophomore_second[n]= gradeA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		credit_sophomore_second[n]=creditA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		majer_sophomore_second[n]=majerA[n];  
+	}
+	gtk_button_set_label(GTK_BUTTON(sophomore_second),"saved_sophomore_second");
+}
+void save_junior_first()
+{
+	int n;
+	for(n=0;n<16;n++)
+	{
+ 		sub_junior_first[n] = subA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		grade_junior_first[n]= gradeA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		credit_junior_first[n]=creditA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		majer_junior_first[n]=majerA[n];  
+	}
+	gtk_button_set_label(GTK_BUTTON(junior_first),"saved_junior_first");
+}
+void save_junior_second()
+{
+	int n;
+	for(n=0;n<16;n++)
+	{
+ 		sub_junior_second[n] = subA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		grade_junior_second[n]= gradeA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		credit_junior_second[n]=creditA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		majer_junior_second[n]=majerA[n];  
+	}
+	gtk_button_set_label(GTK_BUTTON(junior_second),"saved_junior_second");
+}
+void save_senior_first()
+{
+	int n;
+	for(n=0;n<16;n++)
+	{
+ 		sub_senior_first[n] = subA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		grade_senior_first[n]= gradeA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		credit_senior_first[n]=creditA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		majer_senior_first[n]=majerA[n];  
+	}
+	gtk_button_set_label(GTK_BUTTON(senior_first),"saved_senior_first");
+}
+void save_senior_second()
+{
+	int n;
+	for(n=0;n<16;n++)
+	{
+ 		sub_senior_second[n] = subA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		grade_senior_second[n]= gradeA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		credit_senior_second[n]=creditA[n];
+	}
+	for(n=0;n<16;n++)
+	{
+		majer_senior_second[n]=majerA[n];  
+	}
+	gtk_button_set_label(GTK_BUTTON(senior_second),"saved_senior_second");
+
+}
+
+
 void function_calculate()
 {
 	int score=0;
@@ -999,8 +1172,10 @@ int main (int argc, char *argv[])
 	hbox8 = gtk_hbox_new(TRUE, 0);
 	hbox9 = gtk_hbox_new(TRUE, 0);
 	hbox10 = gtk_hbox_new(TRUE, 0);
-	hbox_first = gtk_hbox_new(TRUE, 0);
-	hbox_second = gtk_hbox_new(TRUE, 0);
+	hbox_fresh = gtk_hbox_new(TRUE, 0);
+	hbox_sophomore = gtk_hbox_new(TRUE, 0);
+	hbox_junior = gtk_hbox_new(TRUE, 0);
+	hbox_senior = gtk_hbox_new(TRUE, 0);
 	hbox_label = gtk_hbox_new(TRUE, 0);
 
 
@@ -1024,7 +1199,7 @@ int main (int argc, char *argv[])
 	result = gtk_label_new("result");
 	gtk_widget_set_size_request(result, X, Y);
 
-	info = gtk_label_new("select   semester");
+	info = gtk_label_new("click a semester if you want save the information");
 	gtk_widget_set_size_request(info, X, Y);
 
 	clear = gtk_button_new_with_label("clear");
@@ -1320,15 +1495,15 @@ int main (int argc, char *argv[])
 	gtk_container_add(GTK_CONTAINER(hbox10),credit10);
 	gtk_container_add(GTK_CONTAINER(hbox10),majer10);
 
-	gtk_container_add(GTK_CONTAINER(hbox_first),fresh_first);
-	gtk_container_add(GTK_CONTAINER(hbox_first),sophomore_first);
-	gtk_container_add(GTK_CONTAINER(hbox_first),junior_first);
-	gtk_container_add(GTK_CONTAINER(hbox_first),senior_first);
+	gtk_container_add(GTK_CONTAINER(hbox_fresh),fresh_first);
+	gtk_container_add(GTK_CONTAINER(hbox_sophomore),sophomore_first);
+	gtk_container_add(GTK_CONTAINER(hbox_junior),junior_first);
+	gtk_container_add(GTK_CONTAINER(hbox_senior),senior_first);
 
-	gtk_container_add(GTK_CONTAINER(hbox_second),fresh_second);
-	gtk_container_add(GTK_CONTAINER(hbox_second),sophomore_second);
-	gtk_container_add(GTK_CONTAINER(hbox_second),junior_second);
-	gtk_container_add(GTK_CONTAINER(hbox_second),senior_second);
+	gtk_container_add(GTK_CONTAINER(hbox_fresh),fresh_second);
+	gtk_container_add(GTK_CONTAINER(hbox_sophomore),sophomore_second);
+	gtk_container_add(GTK_CONTAINER(hbox_junior),junior_second);
+	gtk_container_add(GTK_CONTAINER(hbox_senior),senior_second);
 
 	gtk_container_add(GTK_CONTAINER(hbox_label),info);
 
@@ -1345,8 +1520,10 @@ int main (int argc, char *argv[])
 	gtk_container_add(GTK_CONTAINER(vbox),hbox9);
 	gtk_container_add(GTK_CONTAINER(vbox),hbox10);
 	gtk_container_add(GTK_CONTAINER(vbox),hbox_label);
-	gtk_container_add(GTK_CONTAINER(vbox),hbox_first);
-	gtk_container_add(GTK_CONTAINER(vbox),hbox_second);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox_fresh);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox_sophomore);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox_junior);
+	gtk_container_add(GTK_CONTAINER(vbox),hbox_senior);
 
 
 
@@ -1377,14 +1554,14 @@ int main (int argc, char *argv[])
 	g_signal_connect(G_OBJECT(clear), "clicked", G_CALLBACK(function_clear), NULL);
 	g_signal_connect(G_OBJECT(calculate), "clicked", G_CALLBACK(function_calculate), NULL);
 
-	g_signal_connect(G_OBJECT(fresh_first), "clicked", G_CALLBACK(buttonClicked), NULL);
-	g_signal_connect(G_OBJECT(fresh_second), "clicked", G_CALLBACK(buttonClicked), NULL);
-	g_signal_connect(G_OBJECT(sophomore_first), "clicked", G_CALLBACK(buttonClicked), NULL);
-	g_signal_connect(G_OBJECT(sophomore_second), "clicked", G_CALLBACK(buttonClicked), NULL);
-	g_signal_connect(G_OBJECT(junior_first), "clicked", G_CALLBACK(buttonClicked), NULL);
-	g_signal_connect(G_OBJECT(junior_second), "clicked", G_CALLBACK(buttonClicked), NULL);
-	g_signal_connect(G_OBJECT(senior_first), "clicked", G_CALLBACK(buttonClicked), NULL);
-	g_signal_connect(G_OBJECT(senior_second), "clicked", G_CALLBACK(buttonClicked), NULL);
+	g_signal_connect(G_OBJECT(fresh_first), "clicked", G_CALLBACK(save_fresh_first), NULL);
+	g_signal_connect(G_OBJECT(fresh_second), "clicked", G_CALLBACK(save_fresh_second), NULL);
+	g_signal_connect(G_OBJECT(sophomore_first), "clicked", G_CALLBACK(save_sophomore_first), NULL);
+	g_signal_connect(G_OBJECT(sophomore_second), "clicked", G_CALLBACK(save_sophomore_second), NULL);
+	g_signal_connect(G_OBJECT(junior_first), "clicked", G_CALLBACK(save_junior_first), NULL);
+	g_signal_connect(G_OBJECT(junior_second), "clicked", G_CALLBACK(save_junior_second), NULL);
+	g_signal_connect(G_OBJECT(senior_first), "clicked", G_CALLBACK(save_senior_first), NULL);
+	g_signal_connect(G_OBJECT(senior_second), "clicked", G_CALLBACK(save_senior_second), NULL);
 
 	g_signal_connect(G_OBJECT(majer1), "clicked", G_CALLBACK(buttonClicked), NULL);
 	g_signal_connect(G_OBJECT(majer2), "clicked", G_CALLBACK(buttonClicked), NULL);
