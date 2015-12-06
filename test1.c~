@@ -2,7 +2,13 @@
 #define X 150 //axis x
 #define Y 30	//axis y
 
-GtkWidget* window;	//프로그램을 작성하는데 필요한 전역변수들을 선언합니다.
+GtkWidget* window, *window_main, window_saved_info;	//프로그램을 작성하는데 필요한 전역변수들을 선언합니다.
+
+GtkWidget* window_main_btn, *window_saved_btn;
+GtkWidget* window_main_label;
+GtkWidget* window_vbox;
+GtkWidget* window_hbox1, *window_hbox2;
+
 GtkWidget* label;
 GtkWidget* vbox, *vbox1, *vbox2;
 GtkWidget* hbox, *hbox0, *hbox1, *hbox2, *hbox3, *hbox4, *hbox5, *hbox6, *hbox7,* hbox8, *hbox9, *hbox10, *hbox_fresh, *hbox_sophomore, *hbox_junior, *hbox_senior, *hbox_label;
@@ -68,6 +74,14 @@ int majer_senior_second[16]={0,};
 int counter = 0;	//the number of subject
 double total_score=0;
 //fresh_first, *fresh_second, *sophomore_first, *sophomore_second, *junior_first, *junior_second, *senior_first, *senior_second
+void destroy()
+{
+	gtk_widget_destroy(window_main);
+	gtk_widget_show_all(window);	//창에 있는 모든 위젯들을 보여줍니다.
+gtk_main();
+
+}
+
 void save_fresh_first()
 {
 	int n;
@@ -298,7 +312,7 @@ void save_senior_second()
 
 void function_calculate()
 {
-	int score=0;
+	double score=0;
 	char _total_score[1]={0};
 	int i;
 	int cnt=0;
@@ -307,11 +321,12 @@ void function_calculate()
 		if(buf_grd[i] == 1 && buf_crd[i] ==1 && buf_maj[i] == 1)
 		{
 			score += gradeA[i]*creditA[i];
+			printf("%f = %f * %d \n",score,gradeA[i],creditA[i]);
 			//total_score +=score;
 			cnt++;	
 		}
 	}
-	total_score = (score / cnt)+(score % cnt);
+	total_score = (score / cnt);//+(score % cnt);
 	sprintf(_total_score,"%f",total_score);
 	gtk_label_set_text(GTK_LABEL(result),_total_score);
 }
@@ -1204,8 +1219,10 @@ int main (int argc, char *argv[])
 {//box size - 
 	gtk_init(&argc, &argv);	// GTK 기능을 사용하기전에 필요한 모든것을 초기화합니다
 	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);	//새로운 창을 만듭니다.
+	window_main = gtk_window_new(GTK_WINDOW_TOPLEVEL);	
 
 	g_signal_connect(G_OBJECT(window), "destroy", G_CALLBACK(gtk_main_quit), NULL);
+	g_signal_connect(G_OBJECT(window_main), "destroy", G_CALLBACK(gtk_main_quit), NULL);
 	/*-------------------------------------------------------*/
 	//라벨을 만듭니다.
 	label = gtk_label_new("grade calculation");
@@ -1235,8 +1252,16 @@ int main (int argc, char *argv[])
 	hbox_label = gtk_hbox_new(TRUE, 0);
 
 
+	window_vbox = gtk_hbox_new(TRUE, 0);
+	window_hbox1 = gtk_hbox_new(TRUE, 0);
+	window_hbox2 = gtk_hbox_new(TRUE, 0);
+
+
 	/*-------------------------------------------------------*/
 	//make label
+	window_main_label = gtk_label_new("select button");	
+	gtk_widget_set_size_request(window_main_label, X, Y);
+
 	sub = gtk_label_new("subject");	//creating and setting size of label
 	gtk_widget_set_size_request(sub, X, Y);
 
@@ -1287,6 +1312,12 @@ int main (int argc, char *argv[])
 
 	senior_second = gtk_button_new_with_label("senior_second");
 	gtk_widget_set_size_request(senior_second, X, Y);
+
+	window_main_btn = gtk_button_new_with_label("window_main_btn");
+	gtk_widget_set_size_request(window_main_btn, X, Y);
+
+	window_saved_btn = gtk_button_new_with_label("window_saved_btn");
+	gtk_widget_set_size_request(window_saved_btn, X, Y);
 
 //////////////////////////////////////////////////////
 	sub1 = gtk_label_new("subject1");
@@ -1563,6 +1594,12 @@ int main (int argc, char *argv[])
 
 	gtk_container_add(GTK_CONTAINER(hbox_label),info);
 
+	gtk_container_add(GTK_CONTAINER(window_hbox1),window_main_label);
+	gtk_container_add(GTK_CONTAINER(window_hbox2),window_main_btn);
+	gtk_container_add(GTK_CONTAINER(window_hbox2),window_saved_btn);
+
+	
+
 	gtk_container_add(GTK_CONTAINER(vbox),hbox);
 	gtk_container_add(GTK_CONTAINER(vbox),hbox0);
 	gtk_container_add(GTK_CONTAINER(vbox),hbox1);
@@ -1580,6 +1617,10 @@ int main (int argc, char *argv[])
 	gtk_container_add(GTK_CONTAINER(vbox),hbox_sophomore);
 	gtk_container_add(GTK_CONTAINER(vbox),hbox_junior);
 	gtk_container_add(GTK_CONTAINER(vbox),hbox_senior);
+
+	gtk_container_add(GTK_CONTAINER(window_vbox),window_hbox1);
+	gtk_container_add(GTK_CONTAINER(window_vbox),window_hbox2);
+
 
 
 
@@ -1630,10 +1671,18 @@ int main (int argc, char *argv[])
 	g_signal_connect(G_OBJECT(majer9), "clicked", G_CALLBACK(buttonClicked), NULL);
 	g_signal_connect(G_OBJECT(majer10), "clicked", G_CALLBACK(buttonClicked), NULL);
 
+	g_signal_connect(G_OBJECT(window_main_btn), "clicked", G_CALLBACK(destroy), NULL);
+	g_signal_connect(G_OBJECT(window_saved_btn), "clicked", G_CALLBACK(destroy), NULL);
+
+
+
+
+	gtk_container_add(GTK_CONTAINER(window_main),window_vbox);
 	gtk_container_add(GTK_CONTAINER(window),vbox);
 	//만들어둔 창에 v박스를 포함시킵니다.
 
-	gtk_widget_show_all(window);	//창에 있는 모든 위젯들을 보여줍니다.
+	gtk_widget_show_all(window_main);	
+	//gtk_widget_show_all(window);	//창에 있는 모든 위젯들을 보여줍니다.
 
 	gtk_main();	//다음 입력이 있을때까지 기다립니다.
 
