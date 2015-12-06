@@ -1252,7 +1252,7 @@ int main (int argc, char *argv[])
 	hbox_label = gtk_hbox_new(TRUE, 0);
 
 
-	window_vbox = gtk_hbox_new(TRUE, 0);
+	window_vbox = gtk_vbox_new(TRUE, 0);
 	window_hbox1 = gtk_hbox_new(TRUE, 0);
 	window_hbox2 = gtk_hbox_new(TRUE, 0);
 
@@ -1681,7 +1681,8 @@ int main (int argc, char *argv[])
 	gtk_container_add(GTK_CONTAINER(window),vbox);
 	//만들어둔 창에 v박스를 포함시킵니다.
 
-	gtk_widget_show_all(window_main);	
+	gtk_widget_show_all(window_main);
+	gtk_widget_set_size_request(window_main, 500, 500);	
 	//gtk_widget_show_all(window);	//창에 있는 모든 위젯들을 보여줍니다.
 
 	gtk_main();	//다음 입력이 있을때까지 기다립니다.
