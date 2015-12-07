@@ -77,6 +77,7 @@ int counter = 0;	//the number of subject
 double total_score=0;
 double major_score=0;
 //fresh_first, *fresh_second, *sophomore_first, *sophomore_second, *junior_first, *junior_second, *senior_first, *senior_second
+
 void destroy()
 {
 	gtk_widget_destroy(window_main);
