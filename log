@@ -1,0 +1,303 @@
+so@ubuntu:~/class/git$ git log
+commit 2d7bc74d6ebf5ed08075b303bd51f3122fb57ab6
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:38:06 2015 -0800
+
+    set size main window
+
+commit 18aafe89cfed6f95c6ad1b622611207d95de0a97
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:25:05 2015 -0800
+
+    multi-window
+
+commit 49e5eac815ab7b54526aa1d1639a4c05f0117e2a
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:12:15 2015 -0800
+
+    edit save button
+
+commit 51155e287de078529f92912e527cac8a6bb70b99
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:04:41 2015 -0800
+
+    info save
+:...skipping...
+commit 2d7bc74d6ebf5ed08075b303bd51f3122fb57ab6
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:38:06 2015 -0800
+
+    set size main window
+
+commit 18aafe89cfed6f95c6ad1b622611207d95de0a97
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:25:05 2015 -0800
+
+    multi-window
+
+commit 49e5eac815ab7b54526aa1d1639a4c05f0117e2a
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:12:15 2015 -0800
+
+    edit save button
+
+commit 51155e287de078529f92912e527cac8a6bb70b99
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:04:41 2015 -0800
+
+    info save
+
+:...skipping...
+commit 2d7bc74d6ebf5ed08075b303bd51f3122fb57ab6
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:38:06 2015 -0800
+
+    set size main window
+
+commit 18aafe89cfed6f95c6ad1b622611207d95de0a97
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:25:05 2015 -0800
+
+    multi-window
+
+commit 49e5eac815ab7b54526aa1d1639a4c05f0117e2a
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:12:15 2015 -0800
+
+    edit save button
+
+commit 51155e287de078529f92912e527cac8a6bb70b99
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:04:41 2015 -0800
+
+    info save
+
+commit b73e7aa54eb1b48715839f0d80ce9cc13223384b
+:...skipping...
+commit 2d7bc74d6ebf5ed08075b303bd51f3122fb57ab6
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:38:06 2015 -0800
+
+    set size main window
+
+commit 18aafe89cfed6f95c6ad1b622611207d95de0a97
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:25:05 2015 -0800
+
+    multi-window
+
+commit 49e5eac815ab7b54526aa1d1639a4c05f0117e2a
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:12:15 2015 -0800
+
+    edit save button
+
+commit 51155e287de078529f92912e527cac8a6bb70b99
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:04:41 2015 -0800
+
+    info save
+
+commit b73e7aa54eb1b48715839f0d80ce9cc13223384b
+Author: soyeon93 <csycherry93@gmail.com>
+:...skipping...
+commit 2d7bc74d6ebf5ed08075b303bd51f3122fb57ab6
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:38:06 2015 -0800
+
+    set size main window
+
+commit 18aafe89cfed6f95c6ad1b622611207d95de0a97
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:25:05 2015 -0800
+
+    multi-window
+
+commit 49e5eac815ab7b54526aa1d1639a4c05f0117e2a
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:12:15 2015 -0800
+
+    edit save button
+
+commit 51155e287de078529f92912e527cac8a6bb70b99
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:04:41 2015 -0800
+
+    info save
+
+commit b73e7aa54eb1b48715839f0d80ce9cc13223384b
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 05:15:31 2015 -0800
+:...skipping...
+commit 2d7bc74d6ebf5ed08075b303bd51f3122fb57ab6
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:38:06 2015 -0800
+
+    set size main window
+
+commit 18aafe89cfed6f95c6ad1b622611207d95de0a97
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:25:05 2015 -0800
+
+    multi-window
+
+commit 49e5eac815ab7b54526aa1d1639a4c05f0117e2a
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:12:15 2015 -0800
+
+    edit save button
+
+commit 51155e287de078529f92912e527cac8a6bb70b99
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:04:41 2015 -0800
+
+    info save
+
+commit b73e7aa54eb1b48715839f0d80ce9cc13223384b
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 05:15:31 2015 -0800
+
+:...skipping...
+commit 2d7bc74d6ebf5ed08075b303bd51f3122fb57ab6
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:38:06 2015 -0800
+
+    set size main window
+
+commit 18aafe89cfed6f95c6ad1b622611207d95de0a97
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:25:05 2015 -0800
+
+    multi-window
+
+commit 49e5eac815ab7b54526aa1d1639a4c05f0117e2a
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:12:15 2015 -0800
+
+    edit save button
+
+commit 51155e287de078529f92912e527cac8a6bb70b99
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:04:41 2015 -0800
+
+    info save
+
+commit b73e7aa54eb1b48715839f0d80ce9cc13223384b
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 05:15:31 2015 -0800
+
+    semester button
+:...skipping...
+commit 2d7bc74d6ebf5ed08075b303bd51f3122fb57ab6
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:38:06 2015 -0800
+
+    set size main window
+
+commit 18aafe89cfed6f95c6ad1b622611207d95de0a97
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:25:05 2015 -0800
+
+    multi-window
+
+commit 49e5eac815ab7b54526aa1d1639a4c05f0117e2a
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:12:15 2015 -0800
+
+    edit save button
+
+commit 51155e287de078529f92912e527cac8a6bb70b99
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:04:41 2015 -0800
+
+    info save
+
+commit b73e7aa54eb1b48715839f0d80ce9cc13223384b
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 05:15:31 2015 -0800
+
+    semester button
+
+commit b123f3480be32970198a6e0fa85a68192f2583a0
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 04:35:24 2015 -0800
+
+    add semester
+
+commit f46529789ac6e59f5421d8d8c170237ae5531f74
+Author: soyeon93 <csycherry93@gmail.com>
+:
+
+commit 2d7bc74d6ebf5ed08075b303bd51f3122fb57ab6
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:38:06 2015 -0800
+
+    set size main window
+
+commit 18aafe89cfed6f95c6ad1b622611207d95de0a97
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:25:05 2015 -0800
+
+    multi-window
+
+commit 49e5eac815ab7b54526aa1d1639a4c05f0117e2a
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:12:15 2015 -0800
+
+    edit save button
+
+commit 51155e287de078529f92912e527cac8a6bb70b99
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:04:41 2015 -0800
+
+    info save
+
+commit b73e7aa54eb1b48715839f0d80ce9cc13223384b
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 05:15:31 2015 -0800
+
+    semester button
+
+commit b123f3480be32970198a6e0fa85a68192f2583a0
+Author: soyeon93 <csycherry93@gmail.com>
+:
+
+commit 2d7bc74d6ebf5ed08075b303bd51f3122fb57ab6
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:38:06 2015 -0800
+
+    set size main window
+
+commit 18aafe89cfed6f95c6ad1b622611207d95de0a97
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 22:25:05 2015 -0800
+
+    multi-window
+
+commit 49e5eac815ab7b54526aa1d1639a4c05f0117e2a
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:12:15 2015 -0800
+
+    edit save button
+
+commit 51155e287de078529f92912e527cac8a6bb70b99
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 06:04:41 2015 -0800
+
+    info save
+
+commit b73e7aa54eb1b48715839f0d80ce9cc13223384b
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 05:15:31 2015 -0800
+
+    semester button
+
+commit b123f3480be32970198a6e0fa85a68192f2583a0
+Author: soyeon93 <csycherry93@gmail.com>
+Date:   Sat Dec 5 04:35:24 2015 -0800
+
+    add semester
+
+commit f46529789ac6e59f5421d8d8c170237ae5531f74
+Author: soyeon93 <csycherry93@gmail.com>
+
