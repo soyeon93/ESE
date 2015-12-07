@@ -1,5 +1,6 @@
-
-void btn_settin()
+#include "define.h"
+#include<gtk/gtk.h>
+void btn_setting()
 {
 	window_main_label = gtk_label_new("select button");	
 	gtk_widget_set_size_request(window_main_label, X, Y);

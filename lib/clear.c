@@ -1,5 +1,13 @@
 #include<gtk/gtk.h>
 #include "define.h" 
+int counter;
+int buf_grd[16];
+int buf_crd[16];
+int buf_maj[16];
+char *subA[16];		
+double gradeA[16];	
+int creditA[16];	
+int majorA[16];	
 
 void function_clear()
 {

@@ -1,3 +1,6 @@
+#include<gtk/gtk.h>
+#include "define.h" 
+
 void function_clear()
 {
 	int i;	

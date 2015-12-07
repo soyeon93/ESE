@@ -1,3 +1,6 @@
+#include "define.h"
+#include<gtk/gtk.h>
+
 void destroy_cal()
 {
 flag=0;
