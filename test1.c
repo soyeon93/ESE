@@ -32,64 +32,64 @@ int majorA[16]={0,};	//is it major or not
 int buf_grd[16]={0,};
 int buf_crd[16]={0,};
 int buf_maj[16]={0,};	
-int cntA[16]={0,};
-int mjr_cntA[16]={0,};
+int cntA=0;
+int mjr_cntA=0;
 
 char *sub_fresh_first[16];
 int grade_fresh_first[16]={0,};
 int credit_fresh_first[16]={0,};
 int major_fresh_first[16]={0,};	
-int cnt_fresh_first[16]={0,};
-int mjr_cnt_fresh_first[16]={0,};  
+int cnt_fresh_first=0;
+int mjr_cnt_fresh_first=0;  
 
 char *sub_fresh_second[16];
 int grade_fresh_second[16]={0,};
 int credit_fresh_second[16]={0,};
 int major_fresh_second[16]={0,}; 
-int cnt_fresh_second[16]={0,};
-int mjr_cnt_fresh_second[16]={0,}; 
+int cnt_fresh_second=0;
+int mjr_cnt_fresh_second=0; 
 
 char *sub_sophomore_first[16];
 int grade_sophomore_first[16]={0,};
 int credit_sophomore_first[16]={0,};
 int major_sophomore_first[16]={0,};
-int cnt_sophomore_first[16]={0,};
-int mjr_cnt_sophomore_first[16]={0,};  
+int cnt_sophomore_first=0;
+int mjr_cnt_sophomore_first=0;  
 
 char *sub_sophomore_second[16];
 int grade_sophomore_second[16]={0,};
 int credit_sophomore_second[16]={0,};
 int major_sophomore_second[16]={0,};
-int cnt_sophomore_second[16]={0,};
-int mjr_cnt_sophomore_second[16]={0,};  
+int cnt_sophomore_second=0;
+int mjr_cnt_sophomore_second=0;  
 
 char *sub_junior_first[16];
 int grade_junior_first[16]={0,};
 int credit_junior_first[16]={0,};
 int major_junior_first[16]={0,}; 
-int cnt_junior_first[16]={0,};
-int mjr_cnt_junior_first[16]={0,}; 
+int cnt_junior_first=0;
+int mjr_cnt_junior_first=0; 
 
 char *sub_junior_second[16];
 int grade_junior_second[16]={0,};
 int credit_junior_second[16]={0,};
 int major_junior_second[16]={0,};
-int cnt_junior_second[16]={0,};
-int mjr_cnt_junior_second[16]={0,};  
+int cnt_junior_second=0;
+int mjr_cnt_junior_second=0;  
 
 char *sub_senior_first[16];
 int grade_senior_first[16]={0,};
 int credit_senior_first[16]={0,};
 int major_senior_first[16]={0,}; 
-int cnt_senior_first[16]={0,};
-int mjr_cnt_senior_first[16]={0,}; 
+int cnt_senior_first=0;
+int mjr_cnt_senior_first=0; 
 
 char *sub_senior_second[16];
 int grade_senior_second[16]={0,};
 int credit_senior_second[16]={0,};
 int major_senior_second[16]={0,};
-int cnt_senior_second[16]={0,};
-int mjr_cnt_senior_second[16]={0,};  
+int cnt_senior_second=0;
+int mjr_cnt_senior_second=0;  
 
 int counter = 0;	//the number of subject
 double total_score=0;
@@ -200,6 +200,8 @@ void save_fresh_first()
 	{
 		major_fresh_first[n]=majorA[n];  
 	}
+	cnt_fresh_first = cntA;
+	mjr_cnt_fresh_first = mjr_cntA;
 	gtk_button_set_label(GTK_BUTTON(fresh_first),"saved_fresh_first");
 	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
 	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
@@ -235,6 +237,8 @@ void save_fresh_second()
 	{
 		major_fresh_second[n]=majorA[n];  
 	}
+	cnt_fresh_second = cntA;
+	mjr_cnt_fresh_second = mjr_cntA;
 	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
 	gtk_button_set_label(GTK_BUTTON(fresh_second),"saved_fresh_second");
 	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
@@ -263,6 +267,8 @@ void save_sophomore_first()
 	{
 		major_sophomore_first[n]=majorA[n];  
 	}
+	cnt_sophomore_first = cntA;
+	mjr_cnt_sophomore_first = mjr_cntA;
 	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
 	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
 	gtk_button_set_label(GTK_BUTTON(sophomore_first),"saved_sophomore_first");
@@ -291,6 +297,8 @@ void save_sophomore_second()
 	{
 		major_sophomore_second[n]=majorA[n];  
 	}
+	cnt_sophomore_second = cntA;
+	mjr_cnt_sophomore_second = mjr_cntA;
 	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
 	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
 	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
@@ -319,6 +327,8 @@ void save_junior_first()
 	{
 		major_junior_first[n]=majorA[n];  
 	}
+	cnt_junior_first = cntA;
+	mjr_cnt_junior_first = mjr_cntA;
 	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
 	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
 	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
@@ -347,6 +357,8 @@ void save_junior_second()
 	{
 		major_junior_second[n]=majorA[n];  
 	}
+	cnt_junior_second = cntA;
+	mjr_cnt_junior_second = mjr_cntA;
 	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
 	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
 	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
@@ -375,6 +387,8 @@ void save_senior_first()
 	{
 		major_senior_first[n]=majorA[n];  
 	}
+	cnt_senior_first = cntA;
+	mjr_cnt_senior_first = mjr_cntA;
 	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
 	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
 	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
@@ -403,6 +417,8 @@ void save_senior_second()
 	{
 		major_senior_second[n]=majorA[n];  
 	}
+	cnt_senior_second = cntA;
+	mjr_cnt_senior_second = mjr_cntA;
 	gtk_button_set_label(GTK_BUTTON(fresh_first),"fresh_first");
 	gtk_button_set_label(GTK_BUTTON(fresh_second),"fresh_second");
 	gtk_button_set_label(GTK_BUTTON(sophomore_first),"sophomore_first");
