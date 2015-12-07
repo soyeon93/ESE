@@ -367,13 +367,8 @@ void function_clear()
 	for(i=0;i<16;i++){buf_crd[i]=0;}
 	for(i=0;i<16;i++){buf_maj[i]=0;}
 
-
 	counter = 0;
-/*
-	gtk_button_set_label(GTK_BUTTON(calculate),"calculate");
-	gtk_button_set_label(GTK_BUTTON(empty),"");
-	gtk_button_set_label(GTK_BUTTON(clear),"clear");
-*/
+
 	gtk_label_set_text(GTK_LABEL(major_result),"0.0");
 	gtk_label_set_text(GTK_LABEL(result),"0.0");
 	gtk_label_set_text(GTK_LABEL(sub1),"sub1");	//button setting
@@ -386,13 +381,7 @@ void function_clear()
 	gtk_label_set_text(GTK_LABEL(sub8),"sub8");
 	gtk_label_set_text(GTK_LABEL(sub9),"sub9");
 	gtk_label_set_text(GTK_LABEL(sub10),"sub10");
-/*	gtk_button_set_label(GTK_BUTTON(sub11),"sub11");
-	gtk_button_set_label(GTK_BUTTON(sub12),"sub12");
-	gtk_button_set_label(GTK_BUTTON(sub13),"sub13");
-	gtk_button_set_label(GTK_BUTTON(sub14),"sub14");
-	gtk_button_set_label(GTK_BUTTON(sub15),"sub15");
-	gtk_button_set_label(GTK_BUTTON(sub16),"sub16");
-*/
+
 	gtk_button_set_label(GTK_BUTTON(grade1),"grd1");
 	gtk_button_set_label(GTK_BUTTON(grade2),"grd2");
 	gtk_button_set_label(GTK_BUTTON(grade3),"grd3");
@@ -403,13 +392,7 @@ void function_clear()
 	gtk_button_set_label(GTK_BUTTON(grade8),"grd8");
 	gtk_button_set_label(GTK_BUTTON(grade9),"grd9");
 	gtk_button_set_label(GTK_BUTTON(grade10),"grd10");
-/*	gtk_button_set_label(GTK_BUTTON(grade11),"grd11");
-	gtk_button_set_label(GTK_BUTTON(grade12),"grd12");
-	gtk_button_set_label(GTK_BUTTON(grade13),"grd13");
-	gtk_button_set_label(GTK_BUTTON(grade14),"grd14");
-	gtk_button_set_label(GTK_BUTTON(grade15),"grd15");
-	gtk_button_set_label(GTK_BUTTON(grade16),"grd16");
-*/
+
 	gtk_button_set_label(GTK_BUTTON(credit1),"crd1");
 	gtk_button_set_label(GTK_BUTTON(credit2),"crd2");
 	gtk_button_set_label(GTK_BUTTON(credit3),"crd3");
@@ -420,13 +403,7 @@ void function_clear()
 	gtk_button_set_label(GTK_BUTTON(credit8),"crd8");
 	gtk_button_set_label(GTK_BUTTON(credit9),"crd9");
 	gtk_button_set_label(GTK_BUTTON(credit10),"crd10");
-/*	gtk_button_set_label(GTK_BUTTON(credit11),"crd11");
-	gtk_button_set_label(GTK_BUTTON(credit12),"crd12");
-	gtk_button_set_label(GTK_BUTTON(credit13),"crd13");
-	gtk_button_set_label(GTK_BUTTON(credit14),"crd14");
-	gtk_button_set_label(GTK_BUTTON(credit15),"crd15");
-	gtk_button_set_label(GTK_BUTTON(credit16),"crd16");
-*/
+
 	gtk_button_set_label(GTK_BUTTON(major1),"mjr1");
 	gtk_button_set_label(GTK_BUTTON(major2),"mjr2");
 	gtk_button_set_label(GTK_BUTTON(major3),"mjr3");
@@ -437,13 +414,6 @@ void function_clear()
 	gtk_button_set_label(GTK_BUTTON(major8),"mjr8");
 	gtk_button_set_label(GTK_BUTTON(major9),"mjr9");
 	gtk_button_set_label(GTK_BUTTON(major10),"mjr10");
-/*	gtk_button_set_label(GTK_BUTTON(major11),"mjr11");
-	gtk_button_set_label(GTK_BUTTON(major12),"mjr12");
-	gtk_button_set_label(GTK_BUTTON(major13),"mjr13");
-	gtk_button_set_label(GTK_BUTTON(major14),"mjr14");
-	gtk_button_set_label(GTK_BUTTON(major15),"mjr15");
-	gtk_button_set_label(GTK_BUTTON(major16),"mjr16");
-*/
 	return;
 }
 
