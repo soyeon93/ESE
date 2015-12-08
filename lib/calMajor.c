@@ -14,6 +14,17 @@ int mustTotalNum;
 int mustMajorNum;
 int mustCultureNum;
 
+char myTotalNum1[5]={0,};
+char myMajorNum1[5]={0,};
+char myCultureNum1[5]={0,};
+char originTotalNum1[5]={0,};
+char originMajorNum1[5]={0,};
+char originCultureNum1[5]={0,};
+char mustTotalNum1[5]={0,};
+char mustMajorNum1[5]={0,};
+char mustCultureNum1[5]={0,};
+
+
 //
 //callback function by OS
 void saveButton(void)
@@ -197,37 +208,50 @@ void saveButton(void)
 	myTotalNum=mtn;
 	myMajorNum=mmn;
 	myCultureNum=mcn;
-
+	
+	
 	//
 	mustTotalNum = originTotalNum-myTotalNum;
 	mustMajorNum=originMajorNum-myMajorNum;
 	mustCultureNum=originCultureNum-myCultureNum;
+	
+	sprintf(myTotalNum1,"%d",myTotalNum);
+	sprintf(myMajorNum1,"%d",myMajorNum);
+	sprintf(myCultureNum1,"%d",myCultureNum);
+	sprintf(originTotalNum1,"%d",originTotalNum);
+	sprintf(originMajorNum1,"%d",originMajorNum);
+	sprintf(originCultureNum1,"%d",originCultureNum);
+	sprintf(mustTotalNum1,"%d",mustTotalNum);
+	sprintf(mustMajorNum1,"%d",mustMajorNum);
+	sprintf(mustCultureNum1,"%d",mustCultureNum);
 
+	gtk_label_set_text(GTK_LABEL(label3j_2),myTotalNum1);
+	gtk_label_set_text(GTK_LABEL(label4j_2),myMajorNum1);
+	gtk_label_set_text(GTK_LABEL(label5j_2),myCultureNum1);
+
+	gtk_label_set_text(GTK_LABEL(label6j_2_1),originTotalNum1);
+	gtk_label_set_text(GTK_LABEL(label7j_2),originMajorNum1);
+	gtk_label_set_text(GTK_LABEL(label8j_2),originCultureNum1);
+
+	gtk_label_set_text(GTK_LABEL(label9j_2_1),mustTotalNum1);
+	gtk_label_set_text(GTK_LABEL(label1j0_2),mustMajorNum1);
+	gtk_label_set_text(GTK_LABEL(label1j1_2),mustCultureNum1);
 	printf("calculation completed\n");
 }
 
 void calMajor(void)
 {
 	
-char myTotalNum1[5]={0,};
+
+
 	sprintf(myTotalNum1,"%d",myTotalNum);
-	char myMajorNum1[5]={0,};
 	sprintf(myMajorNum1,"%d",myMajorNum);
-	char myCultureNum1[5]={0,};
 	sprintf(myCultureNum1,"%d",myCultureNum);
-
-	char originTotalNum1[5]={0,};
 	sprintf(originTotalNum1,"%d",originTotalNum);
-	char originMajorNum1[5]={0,};
 	sprintf(originMajorNum1,"%d",originMajorNum);
-	char originCultureNum1[5]={0,};
 	sprintf(originCultureNum1,"%d",originCultureNum);
-
-	char mustTotalNum1[5]={0,};
 	sprintf(mustTotalNum1,"%d",mustTotalNum);
-	char mustMajorNum1[5]={0,};
 	sprintf(mustMajorNum1,"%d",mustMajorNum);
-	char mustCultureNum1[5]={0,};
 	sprintf(mustCultureNum1,"%d",mustCultureNum);
 
 
@@ -327,7 +351,7 @@ char myTotalNum1[5]={0,};
 	hbox1j2=gtk_hbox_new(TRUE,0);
 	buttonj=gtk_button_new_with_label("계산시작");
 	gtk_widget_set_size_request(buttonj,50,50);
-	g_signal_connect(G_OBJECT(buttonj), "calculated",G_CALLBACK(saveButton),NULL);
+	g_signal_connect(G_OBJECT(buttonj), "clicked",G_CALLBACK(saveButton),NULL);
 		
 	gtk_container_add(GTK_CONTAINER(hbox1j),label1j_1);
 	
