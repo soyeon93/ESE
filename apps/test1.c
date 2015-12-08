@@ -1,20 +1,20 @@
 #include<gtk/gtk.h>
 #include "define.h"
 int main (int argc, char *argv[])
-{//box size - 
-	gtk_init(&argc, &argv);	// GTK 기능을 사용하기전에 필요한 모든것을 초기화합니다
-	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);	//새로운 창을 만듭니다.
+{
+	gtk_init(&argc, &argv);	
+	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);	
 	window_main = gtk_window_new(GTK_WINDOW_TOPLEVEL);	
 
 	g_signal_connect(G_OBJECT(window), "destroy", G_CALLBACK(gtk_main_quit), NULL);
 	g_signal_connect(G_OBJECT(window_main), "destroy", G_CALLBACK(gtk_main_quit), NULL);
 	/*-------------------------------------------------------*/
-	//라벨을 만듭니다.
+
 	label = gtk_label_new("grade calculation");
 	gtk_widget_set_size_request(label, X, Y);
 
 	/*-------------------------------------------------------*/
-	//v박스를 만듭니다.
+
 	vbox = gtk_vbox_new(TRUE, 0);
 	vbox1 = gtk_vbox_new(TRUE, 0);
 	vbox2 = gtk_vbox_new(TRUE, 0);
