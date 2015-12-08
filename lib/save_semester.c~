@@ -1,5 +1,69 @@
 #include "define.h"
 #include<gtk/gtk.h>
+int flag;
+double major_score;
+double total_score;
+char *subA[16];		
+double gradeA[16];	
+int creditA[16];	
+int majorA[16];	
+
+char *sub_fresh_first[16];
+int grade_fresh_first[16]={0,};
+int credit_fresh_first[16]={0,};
+int major_fresh_first[16]={0,};	
+double re_fresh_first=0;
+double mjr_fresh_first=0;  
+
+char *sub_fresh_second[16];
+int grade_fresh_second[16]={0,};
+int credit_fresh_second[16]={0,};
+int major_fresh_second[16]={0,}; 
+double re_fresh_second=0;
+double mjr_fresh_second=0; 
+
+char *sub_sophomore_first[16];
+int grade_sophomore_first[16]={0,};
+int credit_sophomore_first[16]={0,};
+int major_sophomore_first[16]={0,};
+double re_sophomore_first=0;
+double mjr_sophomore_first=0;  
+
+char *sub_sophomore_second[16];
+int grade_sophomore_second[16]={0,};
+int credit_sophomore_second[16]={0,};
+int major_sophomore_second[16]={0,};
+double re_sophomore_second=0;
+double mjr_sophomore_second=0;  
+
+char *sub_junior_first[16];
+int grade_junior_first[16]={0,};
+int credit_junior_first[16]={0,};
+int major_junior_first[16]={0,}; 
+double re_junior_first=0;
+double mjr_junior_first=0; 
+
+char *sub_junior_second[16];
+int grade_junior_second[16]={0,};
+int credit_junior_second[16]={0,};
+int major_junior_second[16]={0,};
+double re_junior_second=0;
+double mjr_junior_second=0;  
+
+char *sub_senior_first[16];
+int grade_senior_first[16]={0,};
+int credit_senior_first[16]={0,};
+int major_senior_first[16]={0,}; 
+double re_senior_first=0;
+double mjr_senior_first=0; 
+
+char *sub_senior_second[16];
+int grade_senior_second[16]={0,};
+int credit_senior_second[16]={0,};
+int major_senior_second[16]={0,};
+double re_senior_second=0;
+double mjr_senior_second=0;
+
 void save_fresh_first()
 {
 	int n;

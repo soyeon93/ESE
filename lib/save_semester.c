@@ -114,16 +114,16 @@ void save_fresh_first()
 			sprintf(_credit[i],"%d",credit_fresh_first[i]);
 			sprintf(_major[i],"%d",major_fresh_first[i]);
 		}
-		gtk_label_set_text(GTK_LABEL(sub1),_sub[1]);	//button setting
-		gtk_label_set_text(GTK_LABEL(sub2),_sub[2]);
-		gtk_label_set_text(GTK_LABEL(sub3),_sub[3]);
-		gtk_label_set_text(GTK_LABEL(sub4),_sub[4]);
-		gtk_label_set_text(GTK_LABEL(sub5),_sub[5]);
-		gtk_label_set_text(GTK_LABEL(sub6),_sub[6]);
-		gtk_label_set_text(GTK_LABEL(sub7),_sub[7]);
-		gtk_label_set_text(GTK_LABEL(sub8),_sub[8]);
-		gtk_label_set_text(GTK_LABEL(sub9),_sub[9]);
-		gtk_label_set_text(GTK_LABEL(sub10),_sub[10]);
+		gtk_label_set_text(GTK_LABEL(sub1),"sub1");	//button setting
+		gtk_label_set_text(GTK_LABEL(sub2),"sub2");
+		gtk_label_set_text(GTK_LABEL(sub3),"sub3");
+		gtk_label_set_text(GTK_LABEL(sub4),"sub4");
+		gtk_label_set_text(GTK_LABEL(sub5),"sub5");
+		gtk_label_set_text(GTK_LABEL(sub6),"sub6");
+		gtk_label_set_text(GTK_LABEL(sub7),"sub7");
+		gtk_label_set_text(GTK_LABEL(sub8),"sub8");
+		gtk_label_set_text(GTK_LABEL(sub9),"sub9");
+		gtk_label_set_text(GTK_LABEL(sub10),"sub10");
 
 		gtk_button_set_label(GTK_BUTTON(grade1),_grade[1]);
 		gtk_button_set_label(GTK_BUTTON(grade2),_grade[2]);
@@ -217,16 +217,17 @@ void save_fresh_second()
 			sprintf(_credit[i],"%d",credit_fresh_second[i]);
 			sprintf(_major[i],"%d",major_fresh_second[i]);
 		}
-		gtk_label_set_text(GTK_LABEL(sub1),_sub[1]);	//button setting
-		gtk_label_set_text(GTK_LABEL(sub2),_sub[2]);
-		gtk_label_set_text(GTK_LABEL(sub3),_sub[3]);
-		gtk_label_set_text(GTK_LABEL(sub4),_sub[4]);
-		gtk_label_set_text(GTK_LABEL(sub5),_sub[5]);
-		gtk_label_set_text(GTK_LABEL(sub6),_sub[6]);
-		gtk_label_set_text(GTK_LABEL(sub7),_sub[7]);
-		gtk_label_set_text(GTK_LABEL(sub8),_sub[8]);
-		gtk_label_set_text(GTK_LABEL(sub9),_sub[9]);
-		gtk_label_set_text(GTK_LABEL(sub10),_sub[10]);
+
+		gtk_label_set_text(GTK_LABEL(sub1),"sub1");	//button setting
+		gtk_label_set_text(GTK_LABEL(sub2),"sub2");
+		gtk_label_set_text(GTK_LABEL(sub3),"sub3");
+		gtk_label_set_text(GTK_LABEL(sub4),"sub4");
+		gtk_label_set_text(GTK_LABEL(sub5),"sub5");
+		gtk_label_set_text(GTK_LABEL(sub6),"sub6");
+		gtk_label_set_text(GTK_LABEL(sub7),"sub7");
+		gtk_label_set_text(GTK_LABEL(sub8),"sub8");
+		gtk_label_set_text(GTK_LABEL(sub9),"sub9");
+		gtk_label_set_text(GTK_LABEL(sub10),"sub10");
 
 		gtk_button_set_label(GTK_BUTTON(grade1),_grade[1]);
 		gtk_button_set_label(GTK_BUTTON(grade2),_grade[2]);
@@ -313,16 +314,17 @@ if(flag==0){
 			sprintf(_credit[i],"%d",credit_sophomore_first[i]);
 			sprintf(_major[i],"%d",major_sophomore_first[i]);
 		}
-		gtk_label_set_text(GTK_LABEL(sub1),_sub[1]);	//button setting
-		gtk_label_set_text(GTK_LABEL(sub2),_sub[2]);
-		gtk_label_set_text(GTK_LABEL(sub3),_sub[3]);
-		gtk_label_set_text(GTK_LABEL(sub4),_sub[4]);
-		gtk_label_set_text(GTK_LABEL(sub5),_sub[5]);
-		gtk_label_set_text(GTK_LABEL(sub6),_sub[6]);
-		gtk_label_set_text(GTK_LABEL(sub7),_sub[7]);
-		gtk_label_set_text(GTK_LABEL(sub8),_sub[8]);
-		gtk_label_set_text(GTK_LABEL(sub9),_sub[9]);
-		gtk_label_set_text(GTK_LABEL(sub10),_sub[10]);
+
+		gtk_label_set_text(GTK_LABEL(sub1),"sub1");	//button setting
+		gtk_label_set_text(GTK_LABEL(sub2),"sub2");
+		gtk_label_set_text(GTK_LABEL(sub3),"sub3");
+		gtk_label_set_text(GTK_LABEL(sub4),"sub4");
+		gtk_label_set_text(GTK_LABEL(sub5),"sub5");
+		gtk_label_set_text(GTK_LABEL(sub6),"sub6");
+		gtk_label_set_text(GTK_LABEL(sub7),"sub7");
+		gtk_label_set_text(GTK_LABEL(sub8),"sub8");
+		gtk_label_set_text(GTK_LABEL(sub9),"sub9");
+		gtk_label_set_text(GTK_LABEL(sub10),"sub10");
 
 		gtk_button_set_label(GTK_BUTTON(grade1),_grade[1]);
 		gtk_button_set_label(GTK_BUTTON(grade2),_grade[2]);
@@ -408,16 +410,16 @@ if(flag==0){
 			sprintf(_credit[i],"%d",credit_sophomore_second[i]);
 			sprintf(_major[i],"%d",major_sophomore_second[i]);
 		}
-		gtk_label_set_text(GTK_LABEL(sub1),_sub[1]);	//button setting
-		gtk_label_set_text(GTK_LABEL(sub2),_sub[2]);
-		gtk_label_set_text(GTK_LABEL(sub3),_sub[3]);
-		gtk_label_set_text(GTK_LABEL(sub4),_sub[4]);
-		gtk_label_set_text(GTK_LABEL(sub5),_sub[5]);
-		gtk_label_set_text(GTK_LABEL(sub6),_sub[6]);
-		gtk_label_set_text(GTK_LABEL(sub7),_sub[7]);
-		gtk_label_set_text(GTK_LABEL(sub8),_sub[8]);
-		gtk_label_set_text(GTK_LABEL(sub9),_sub[9]);
-		gtk_label_set_text(GTK_LABEL(sub10),_sub[10]);
+		gtk_label_set_text(GTK_LABEL(sub1),"sub1");	//button setting
+		gtk_label_set_text(GTK_LABEL(sub2),"sub2");
+		gtk_label_set_text(GTK_LABEL(sub3),"sub3");
+		gtk_label_set_text(GTK_LABEL(sub4),"sub4");
+		gtk_label_set_text(GTK_LABEL(sub5),"sub5");
+		gtk_label_set_text(GTK_LABEL(sub6),"sub6");
+		gtk_label_set_text(GTK_LABEL(sub7),"sub7");
+		gtk_label_set_text(GTK_LABEL(sub8),"sub8");
+		gtk_label_set_text(GTK_LABEL(sub9),"sub9");
+		gtk_label_set_text(GTK_LABEL(sub10),"sub10");
 
 		gtk_button_set_label(GTK_BUTTON(grade1),_grade[1]);
 		gtk_button_set_label(GTK_BUTTON(grade2),_grade[2]);
@@ -503,16 +505,17 @@ if(flag==0){
 			sprintf(_credit[i],"%d",credit_junior_first[i]);
 			sprintf(_major[i],"%d",major_junior_first[i]);
 		}
-		gtk_label_set_text(GTK_LABEL(sub1),_sub[1]);	//button setting
-		gtk_label_set_text(GTK_LABEL(sub2),_sub[2]);
-		gtk_label_set_text(GTK_LABEL(sub3),_sub[3]);
-		gtk_label_set_text(GTK_LABEL(sub4),_sub[4]);
-		gtk_label_set_text(GTK_LABEL(sub5),_sub[5]);
-		gtk_label_set_text(GTK_LABEL(sub6),_sub[6]);
-		gtk_label_set_text(GTK_LABEL(sub7),_sub[7]);
-		gtk_label_set_text(GTK_LABEL(sub8),_sub[8]);
-		gtk_label_set_text(GTK_LABEL(sub9),_sub[9]);
-		gtk_label_set_text(GTK_LABEL(sub10),_sub[10]);
+
+		gtk_label_set_text(GTK_LABEL(sub1),"sub1");	//button setting
+		gtk_label_set_text(GTK_LABEL(sub2),"sub2");
+		gtk_label_set_text(GTK_LABEL(sub3),"sub3");
+		gtk_label_set_text(GTK_LABEL(sub4),"sub4");
+		gtk_label_set_text(GTK_LABEL(sub5),"sub5");
+		gtk_label_set_text(GTK_LABEL(sub6),"sub6");
+		gtk_label_set_text(GTK_LABEL(sub7),"sub7");
+		gtk_label_set_text(GTK_LABEL(sub8),"sub8");
+		gtk_label_set_text(GTK_LABEL(sub9),"sub9");
+		gtk_label_set_text(GTK_LABEL(sub10),"sub10");
 
 		gtk_button_set_label(GTK_BUTTON(grade1),_grade[1]);
 		gtk_button_set_label(GTK_BUTTON(grade2),_grade[2]);
@@ -598,16 +601,17 @@ if(flag==0){
 			sprintf(_credit[i],"%d",credit_junior_second[i]);
 			sprintf(_major[i],"%d",major_junior_second[i]);
 		}
-		gtk_label_set_text(GTK_LABEL(sub1),_sub[1]);	//button setting
-		gtk_label_set_text(GTK_LABEL(sub2),_sub[2]);
-		gtk_label_set_text(GTK_LABEL(sub3),_sub[3]);
-		gtk_label_set_text(GTK_LABEL(sub4),_sub[4]);
-		gtk_label_set_text(GTK_LABEL(sub5),_sub[5]);
-		gtk_label_set_text(GTK_LABEL(sub6),_sub[6]);
-		gtk_label_set_text(GTK_LABEL(sub7),_sub[7]);
-		gtk_label_set_text(GTK_LABEL(sub8),_sub[8]);
-		gtk_label_set_text(GTK_LABEL(sub9),_sub[9]);
-		gtk_label_set_text(GTK_LABEL(sub10),_sub[10]);
+
+		gtk_label_set_text(GTK_LABEL(sub1),"sub1");	//button setting
+		gtk_label_set_text(GTK_LABEL(sub2),"sub2");
+		gtk_label_set_text(GTK_LABEL(sub3),"sub3");
+		gtk_label_set_text(GTK_LABEL(sub4),"sub4");
+		gtk_label_set_text(GTK_LABEL(sub5),"sub5");
+		gtk_label_set_text(GTK_LABEL(sub6),"sub6");
+		gtk_label_set_text(GTK_LABEL(sub7),"sub7");
+		gtk_label_set_text(GTK_LABEL(sub8),"sub8");
+		gtk_label_set_text(GTK_LABEL(sub9),"sub9");
+		gtk_label_set_text(GTK_LABEL(sub10),"sub10");
 
 		gtk_button_set_label(GTK_BUTTON(grade1),_grade[1]);
 		gtk_button_set_label(GTK_BUTTON(grade2),_grade[2]);
@@ -693,16 +697,17 @@ if(flag==0){
 			sprintf(_credit[i],"%d",credit_senior_first[i]);
 			sprintf(_major[i],"%d",major_senior_first[i]);
 		}
-		gtk_label_set_text(GTK_LABEL(sub1),_sub[1]);	//button setting
-		gtk_label_set_text(GTK_LABEL(sub2),_sub[2]);
-		gtk_label_set_text(GTK_LABEL(sub3),_sub[3]);
-		gtk_label_set_text(GTK_LABEL(sub4),_sub[4]);
-		gtk_label_set_text(GTK_LABEL(sub5),_sub[5]);
-		gtk_label_set_text(GTK_LABEL(sub6),_sub[6]);
-		gtk_label_set_text(GTK_LABEL(sub7),_sub[7]);
-		gtk_label_set_text(GTK_LABEL(sub8),_sub[8]);
-		gtk_label_set_text(GTK_LABEL(sub9),_sub[9]);
-		gtk_label_set_text(GTK_LABEL(sub10),_sub[10]);
+
+		gtk_label_set_text(GTK_LABEL(sub1),"sub1");	//button setting
+		gtk_label_set_text(GTK_LABEL(sub2),"sub2");
+		gtk_label_set_text(GTK_LABEL(sub3),"sub3");
+		gtk_label_set_text(GTK_LABEL(sub4),"sub4");
+		gtk_label_set_text(GTK_LABEL(sub5),"sub5");
+		gtk_label_set_text(GTK_LABEL(sub6),"sub6");
+		gtk_label_set_text(GTK_LABEL(sub7),"sub7");
+		gtk_label_set_text(GTK_LABEL(sub8),"sub8");
+		gtk_label_set_text(GTK_LABEL(sub9),"sub9");
+		gtk_label_set_text(GTK_LABEL(sub10),"sub10");
 
 		gtk_button_set_label(GTK_BUTTON(grade1),_grade[1]);
 		gtk_button_set_label(GTK_BUTTON(grade2),_grade[2]);
@@ -789,16 +794,17 @@ if(flag==0){
 			sprintf(_credit[i],"%d",credit_senior_second[i]);
 			sprintf(_major[i],"%d",major_senior_second[i]);
 		}
-		gtk_label_set_text(GTK_LABEL(sub1),_sub[1]);	//button setting
-		gtk_label_set_text(GTK_LABEL(sub2),_sub[2]);
-		gtk_label_set_text(GTK_LABEL(sub3),_sub[3]);
-		gtk_label_set_text(GTK_LABEL(sub4),_sub[4]);
-		gtk_label_set_text(GTK_LABEL(sub5),_sub[5]);
-		gtk_label_set_text(GTK_LABEL(sub6),_sub[6]);
-		gtk_label_set_text(GTK_LABEL(sub7),_sub[7]);
-		gtk_label_set_text(GTK_LABEL(sub8),_sub[8]);
-		gtk_label_set_text(GTK_LABEL(sub9),_sub[9]);
-		gtk_label_set_text(GTK_LABEL(sub10),_sub[10]);
+
+		gtk_label_set_text(GTK_LABEL(sub1),"sub1");	//button setting
+		gtk_label_set_text(GTK_LABEL(sub2),"sub2");
+		gtk_label_set_text(GTK_LABEL(sub3),"sub3");
+		gtk_label_set_text(GTK_LABEL(sub4),"sub4");
+		gtk_label_set_text(GTK_LABEL(sub5),"sub5");
+		gtk_label_set_text(GTK_LABEL(sub6),"sub6");
+		gtk_label_set_text(GTK_LABEL(sub7),"sub7");
+		gtk_label_set_text(GTK_LABEL(sub8),"sub8");
+		gtk_label_set_text(GTK_LABEL(sub9),"sub9");
+		gtk_label_set_text(GTK_LABEL(sub10),"sub10");
 
 		gtk_button_set_label(GTK_BUTTON(grade1),_grade[1]);
 		gtk_button_set_label(GTK_BUTTON(grade2),_grade[2]);

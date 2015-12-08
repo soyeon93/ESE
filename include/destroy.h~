@@ -1,8 +1,6 @@
 #ifdef _DESTROY_H_
 #define _DESTROY_H_
 
-void btn_setting()
-void addToVbox()
-void callback()
-
+void destroy_cal()
+void destroy_show()
 #endif

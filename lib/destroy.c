@@ -18,3 +18,20 @@ gtk_main();
 
 }
 
+void destroy_calMajor()
+{
+flag=0;
+	gtk_widget_destroy(window_main);
+	gtk_widget_show_all(window_calMajor);	//창에 있는 모든 위젯들을 보여줍니다.
+gtk_main();
+
+}
+void destroy_timetable()
+{
+flag=1;
+	gtk_widget_destroy(window_main);
+	gtk_widget_show_all(window_timetable);	//창에 있는 모든 위젯들을 보여줍니다.
+gtk_main();
+
+}
+

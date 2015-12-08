@@ -3,12 +3,14 @@
 #define X 150 //axis x
 #define Y 30	//axis y
 
-GtkWidget* window, *window_main, window_saved_info;	//프로그램을 작성하는데 필요한 전역변수들을 선언합니다.
+GtkWidget* window, *window_main, *window_timetable, *window_calMajor;	//프로그램을 작성하는데 필요한 전역변수들을 선언합니다.
 
 GtkWidget* window_main_btn, *window_saved_btn;
 GtkWidget* window_main_label;
 GtkWidget* window_vbox;
-GtkWidget* window_hbox1, *window_hbox2;
+GtkWidget* window_hbox1, *window_hbox2, *hbox_graduate;
+
+GtkWidget* window_vbox_timetable, *window_vbox_calMajor;
 
 GtkWidget* back, *major_result;
 
@@ -24,6 +26,8 @@ GtkWidget* credit, *credit1, *credit2, *credit3, *credit4, *credit5, *credit6, *
 GtkWidget* major, *major1, *major2, *major3, *major4, *major5, *major6, *major7, *major8, *major9, *major10, *major11, *major12, *major13, *major14, *major15, *major16;
 
 GtkWidget* calculate, *empty, *result, *clear;
+
+GtkWidget* timetable_btn, *calMajor_btn;
 
 GtkWidget* fresh_first, *fresh_second, *sophomore_first, *sophomore_second, *junior_first, *junior_second, *senior_first, *senior_second, *info;
 
@@ -97,4 +101,27 @@ extern int counter;	//the number of subject
 extern double total_score;
 extern double major_score;
 extern int flag;
+
+void buttonClicked(GtkWidget *widget);
+void function_calculate();
+void function_clear();
+void destroy_cal();
+void destroy_show();
+void destroy_calMajor();
+void destroy_timetable();
+void btn_setting();
+void addToVbox();
+void callback();
+void save_fresh_first();
+void function_back();
+void save_fresh_second();
+void save_sophomore_first();
+void save_sophomore_second();
+void save_junior_first();
+void save_junior_second();
+void save_senior_first();
+void save_senior_second();
+void setGrade(int n);
+void setCredit(int n);
+void setMajor(int n);
 

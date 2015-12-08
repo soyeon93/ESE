@@ -64,6 +64,12 @@ void btn_setting()
 	window_saved_btn = gtk_button_new_with_label("window_saved_btn");
 	gtk_widget_set_size_request(window_saved_btn, X, Y);
 
+	timetable_btn = gtk_button_new_with_label("timetable_btn");
+	gtk_widget_set_size_request(timetable_btn, X, Y);
+
+	calMajor_btn = gtk_button_new_with_label("calMajor_btn");
+	gtk_widget_set_size_request(calMajor_btn, X, Y);
+
 	back = gtk_button_new_with_label("back");
 	gtk_widget_set_size_request(back, X, Y);
 
@@ -341,12 +347,16 @@ gtk_container_add(GTK_CONTAINER(hbox_back),result);
 	gtk_container_add(GTK_CONTAINER(hbox_sophomore),sophomore_second);
 	gtk_container_add(GTK_CONTAINER(hbox_junior),junior_second);
 	gtk_container_add(GTK_CONTAINER(hbox_senior),senior_second);
-
+	
 	gtk_container_add(GTK_CONTAINER(hbox_label),info);
+
+	gtk_container_add(GTK_CONTAINER(hbox_graduate),timetable_btn);
+	gtk_container_add(GTK_CONTAINER(hbox_graduate),calMajor_btn);
 
 	gtk_container_add(GTK_CONTAINER(window_hbox1),window_main_label);
 	gtk_container_add(GTK_CONTAINER(window_hbox2),window_main_btn);
 	gtk_container_add(GTK_CONTAINER(window_hbox2),window_saved_btn);
+
 
 	
 
@@ -371,7 +381,7 @@ gtk_container_add(GTK_CONTAINER(hbox_back),result);
 
 	gtk_container_add(GTK_CONTAINER(window_vbox),window_hbox1);
 	gtk_container_add(GTK_CONTAINER(window_vbox),window_hbox2);
-
+	gtk_container_add(GTK_CONTAINER(window_vbox),hbox_graduate);
 
 
 }
@@ -424,7 +434,10 @@ void callback()
 
 	g_signal_connect(G_OBJECT(window_main_btn), "clicked", G_CALLBACK(destroy_cal), NULL);
 	g_signal_connect(G_OBJECT(window_saved_btn), "clicked", G_CALLBACK(destroy_show), NULL);
-	g_signal_connect(G_OBJECT(back), "clicked", G_CALLBACK(function_back), NULL);
 
+	g_signal_connect(G_OBJECT(window_main_btn), "clicked", G_CALLBACK(destory_timetable), NULL);
+	g_signal_connect(G_OBJECT(window_saved_btn), "clicked", G_CALLBACK(destory_calMajor), NULL);
+	
+	g_signal_connect(G_OBJECT(back), "clicked", G_CALLBACK(function_back), NULL);
 
 }

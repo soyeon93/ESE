@@ -1,6 +1,6 @@
 #include "define.h"
 #include<gtk/gtk.h>
-
+int flag=-1;
 void destroy_cal()
 {
 flag=0;
