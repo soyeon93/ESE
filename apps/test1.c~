@@ -7,7 +7,9 @@ int main (int argc, char *argv[])
 	window_main = gtk_window_new(GTK_WINDOW_TOPLEVEL);	
 
 	g_signal_connect(G_OBJECT(window), "destroy", G_CALLBACK(gtk_main_quit), NULL);
-	g_signal_connect(G_OBJECT(window_main), "destroy", G_CALLBACK(gtk_main_quit), NULL);
+	g_signal_connect(G_OBJECT(window_main), "destroy", G_CALLBACK(gtk_main_quit), NULL);	
+	g_signal_connect(G_OBJECT(window_timetable), "destroy", G_CALLBACK(gtk_main_quit), NULL);
+	g_signal_connect(G_OBJECT(window_calMajor), "destroy", G_CALLBACK(gtk_main_quit), NULL);
 	/*-------------------------------------------------------*/
 
 	label = gtk_label_new("grade calculation");
@@ -42,6 +44,73 @@ int main (int argc, char *argv[])
 	vbox_calMajor = gtk_vbox_new(TRUE, 0);
 	window_hbox1 = gtk_hbox_new(TRUE, 0);
 	window_hbox2 = gtk_hbox_new(TRUE, 0);
+	gtk_container_add(GTK_CONTAINER(hbox1j),label1j_1);
+	
+	gtk_container_add(GTK_CONTAINER(hbox2j),label2j_1);
+	
+	gtk_container_add(GTK_CONTAINER(hbox3j),label3j_1);
+	gtk_container_add(GTK_CONTAINER(hbox3j),label3j_2);
+	gtk_container_add(GTK_CONTAINER(hbox3j),label3j_3);
+	
+	gtk_container_add(GTK_CONTAINER(hbox4j),label4j_1);
+	gtk_container_add(GTK_CONTAINER(hbox4j),label4j_2);
+	gtk_container_add(GTK_CONTAINER(hbox4j),label4j_3);
+	
+	gtk_container_add(GTK_CONTAINER(hbox5j),label5j_1);
+	gtk_container_add(GTK_CONTAINER(hbox5j),label5j_2);
+	gtk_container_add(GTK_CONTAINER(hbox5j),label5j_3);
+	
+	gtk_container_add(GTK_CONTAINER(hbox6j),label6j_1);
+
+	gtk_container_add(GTK_CONTAINER(hbox6j_1),label6j_1_1);
+	gtk_container_add(GTK_CONTAINER(hbox6j_1),label6j_2_1);
+	gtk_container_add(GTK_CONTAINER(hbox6j_1),label6j_3_1);
+
+	gtk_container_add(GTK_CONTAINER(hbox7j),label7j_1);
+	gtk_container_add(GTK_CONTAINER(hbox7j),label7j_2);
+	gtk_container_add(GTK_CONTAINER(hbox7j),label7j_3);
+
+	
+	gtk_container_add(GTK_CONTAINER(hbox8j),label8j_1);
+	gtk_container_add(GTK_CONTAINER(hbox8j),label8j_2);
+	gtk_container_add(GTK_CONTAINER(hbox8j),label8j_3);
+	
+	gtk_container_add(GTK_CONTAINER(hbox9j),label9j_1);	
+
+	gtk_container_add(GTK_CONTAINER(hbox9j_1),label9j_1_1);
+	gtk_container_add(GTK_CONTAINER(hbox9j_1),label9j_2_1);
+	gtk_container_add(GTK_CONTAINER(hbox9j_1),label9j_3_1);
+
+	gtk_container_add(GTK_CONTAINER(hbox1j0),label1j0_1);
+	gtk_container_add(GTK_CONTAINER(hbox1j0),label1j0_2);
+	gtk_container_add(GTK_CONTAINER(hbox1j0),label1j0_3);
+
+	gtk_container_add(GTK_CONTAINER(hbox1j1),label1j1_1);
+	gtk_container_add(GTK_CONTAINER(hbox1j1),label1j1_2);
+	gtk_container_add(GTK_CONTAINER(hbox1j1),label1j1_3);
+	
+	gtk_container_add(GTK_CONTAINER(hbox1j2),buttonj);
+
+	
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox1j);
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox2j);
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox3j);
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox4j);	
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox5j);
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox6j);
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox6j_1);	
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox7j);
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox8j);	
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox9j);
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox9j_1);
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox1j0);	
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox1j1);
+	gtk_container_add(GTK_CONTAINER(vbox_calMajor),hbox1j2);	
+
+		
+	gtk_container_add(GTK_CONTAINER(window_calMajor),vbox_calMajor);
+	gtk_container_add(GTK_CONTAINER(window_timetable),vbox_timetable);
+	//gtk_widget_show_all(window_calMajor);
 
 	btn_setting();
 
@@ -49,6 +118,7 @@ int main (int argc, char *argv[])
 
 	callback();
 
+	g_signal_connect(G_OBJECT(buttonj), "clicked",G_CALLBACK(saveButton),NULL);
 	gtk_container_add(GTK_CONTAINER(window_main),window_vbox);
 	gtk_container_add(GTK_CONTAINER(window),vbox);
 

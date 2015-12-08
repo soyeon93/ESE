@@ -1,0 +1,5 @@
+#ifdef _CALM_H_
+#define _CALM_H_
+void calMajor(void)
+int saveButton(void)
+#endif

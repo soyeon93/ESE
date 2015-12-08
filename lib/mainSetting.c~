@@ -435,8 +435,8 @@ void callback()
 	g_signal_connect(G_OBJECT(window_main_btn), "clicked", G_CALLBACK(destroy_cal), NULL);
 	g_signal_connect(G_OBJECT(window_saved_btn), "clicked", G_CALLBACK(destroy_show), NULL);
 
-	g_signal_connect(G_OBJECT(window_main_btn), "clicked", G_CALLBACK(destory_timetable), NULL);
-	g_signal_connect(G_OBJECT(window_saved_btn), "clicked", G_CALLBACK(destory_calMajor), NULL);
+	g_signal_connect(G_OBJECT(window_main_btn), "clicked", G_CALLBACK(destroy_timetable), NULL);
+	g_signal_connect(G_OBJECT(window_saved_btn), "clicked", G_CALLBACK(destroy_calMajor), NULL);
 	
 	g_signal_connect(G_OBJECT(back), "clicked", G_CALLBACK(function_back), NULL);
 

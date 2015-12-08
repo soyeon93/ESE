@@ -44,6 +44,12 @@ int main (int argc, char *argv[])
 	vbox_calMajor = gtk_vbox_new(TRUE, 0);
 	window_hbox1 = gtk_hbox_new(TRUE, 0);
 	window_hbox2 = gtk_hbox_new(TRUE, 0);
+	
+
+		
+	gtk_container_add(GTK_CONTAINER(window_calMajor),vbox_calMajor);
+	gtk_container_add(GTK_CONTAINER(window_timetable),vbox_timetable);
+	//gtk_widget_show_all(window_calMajor);
 
 	btn_setting();
 
@@ -51,6 +57,7 @@ int main (int argc, char *argv[])
 
 	callback();
 
+	g_signal_connect(G_OBJECT(buttonj), "clicked",G_CALLBACK(saveButton),NULL);
 	gtk_container_add(GTK_CONTAINER(window_main),window_vbox);
 	gtk_container_add(GTK_CONTAINER(window),vbox);
 

@@ -10,7 +10,7 @@ GtkWidget* window_main_label;
 GtkWidget* window_vbox;
 GtkWidget* window_hbox1, *window_hbox2, *hbox_graduate;
 
-GtkWidget* window_vbox_timetable, *window_vbox_calMajor;
+GtkWidget* vbox_timetable, *vbox_calMajor;
 
 GtkWidget* back, *major_result;
 
@@ -30,6 +30,197 @@ GtkWidget* calculate, *empty, *result, *clear;
 GtkWidget* timetable_btn, *calMajor_btn;
 
 GtkWidget* fresh_first, *fresh_second, *sophomore_first, *sophomore_second, *junior_first, *junior_second, *senior_first, *senior_second, *info;
+
+
+GtkWidget *window_calMajor;
+GtkWidget *hbox1j;
+GtkWidget *hbox2j;
+GtkWidget *hbox3j;
+GtkWidget *hbox4j;
+GtkWidget *hbox5j;
+GtkWidget *hbox6j;
+GtkWidget *hbox6j_1;
+
+GtkWidget *hbox7j;
+GtkWidget *hbox8j;
+GtkWidget *hbox9j;
+GtkWidget *hbox9j_1;
+
+GtkWidget *hbox1j0;
+GtkWidget *hbox1j1;
+GtkWidget *hbox1j2;
+GtkWidget *vbox_calMajor;
+
+//table 6*13
+GtkWidget *label1j_1;
+
+GtkWidget *label2j_1;
+
+GtkWidget *label3j_1;
+GtkWidget *label3j_2;
+GtkWidget *label3j_3;
+
+GtkWidget *label4j_1;
+GtkWidget *label4j_2;
+GtkWidget *label4j_3;
+
+GtkWidget *label5j_1;
+GtkWidget *label5j_2;
+GtkWidget *label5j_3;
+
+GtkWidget *label6j_1;
+GtkWidget *label6j_1_1;
+GtkWidget *label6j_2_1;
+GtkWidget *label6j_3_1;
+
+
+GtkWidget *label7j_1;
+GtkWidget *label7j_2;
+GtkWidget *label7j_3;
+
+GtkWidget *label8j_1;
+GtkWidget *label8j_2;
+GtkWidget *label8j_3;
+
+GtkWidget *label9j_1;
+GtkWidget *label9j_1_1;
+GtkWidget *label9j_2_1;
+GtkWidget *label9j_3_1;
+
+GtkWidget *label1j0_1;
+GtkWidget *label1j0_2;
+GtkWidget *label1j0_3;
+
+GtkWidget *label1j1_1;
+GtkWidget *label1j1_2;
+GtkWidget *label1j1_3;
+
+GtkWidget *buttonj;
+
+
+GtkWidget *window_timetable;
+GtkWidget *hbox1jj;
+GtkWidget *hbox2jj;
+GtkWidget *hbox3jj;
+GtkWidget *hbox4jj;
+GtkWidget *hbox5jj;
+GtkWidget *hbox6jj;
+GtkWidget *hbox7jj;
+GtkWidget *hbox8jj;
+GtkWidget *hbox9jj;
+GtkWidget *hbox1jj0;
+GtkWidget *hbox1jj1;
+GtkWidget *hbox1jj2;
+GtkWidget *hbox1jj3;
+GtkWidget *vbox_timetable;
+
+//table 6*13
+GtkWidget *label1jj_1;
+GtkWidget *label1jj_2;
+GtkWidget *label1jj_3;
+GtkWidget *label1jj_4;
+GtkWidget *label1jj_5;
+GtkWidget *label1jj_6;
+
+GtkWidget *label2jj_1;
+GtkWidget *label2jj_2;
+GtkWidget *label2jj_3;
+GtkWidget *label2jj_4;
+GtkWidget *label2jj_5;
+GtkWidget *label2jj_6;
+
+GtkWidget *label3jj_1;
+GtkWidget *label3jj_2;
+GtkWidget *label3jj_3;
+GtkWidget *label3jj_4;
+GtkWidget *label3jj_5;
+GtkWidget *label3jj_6;
+
+GtkWidget *label4jj_1;
+GtkWidget *label4jj_2;
+GtkWidget *label4jj_3;
+GtkWidget *label4jj_4;
+GtkWidget *label4jj_5;
+GtkWidget *label4jj_6;
+
+GtkWidget *label5jj_1;
+GtkWidget *label5jj_2;
+GtkWidget *label5jj_3;
+GtkWidget *label5jj_4;
+GtkWidget *label5jj_5;
+GtkWidget *label5jj_6;
+
+GtkWidget *label6jj_1;
+GtkWidget *label6jj_2;
+GtkWidget *label6jj_3;
+GtkWidget *label6jj_4;
+GtkWidget *label6jj_5;
+GtkWidget *label6jj_6;
+
+GtkWidget *label7jj_1;
+GtkWidget *label7jj_2;
+GtkWidget *label7jj_3;
+GtkWidget *label7jj_4;
+GtkWidget *label7jj_5;
+GtkWidget *label7jj_6;
+
+GtkWidget *label8jj_1;
+GtkWidget *label8jj_2;
+GtkWidget *label8jj_3;
+GtkWidget *label8jj_4;
+GtkWidget *label8jj_5;
+GtkWidget *label8jj_6;
+
+GtkWidget *label9jj_1;
+GtkWidget *label9jj_2;
+GtkWidget *label9jj_3;
+GtkWidget *label9jj_4;
+GtkWidget *label9jj_5;
+GtkWidget *label9jj_6;
+
+GtkWidget *label1jj0_1;
+GtkWidget *label1jj0_2;
+GtkWidget *label1jj0_3;
+GtkWidget *label1jj0_4;
+GtkWidget *label1jj0_5;
+GtkWidget *label1jj0_6;
+
+GtkWidget *label1jj1_1;
+GtkWidget *label1jj1_2;
+GtkWidget *label1jj1_3;
+GtkWidget *label1jj1_4;
+GtkWidget *label1jj1_5;
+GtkWidget *label1jj1_6;
+
+GtkWidget *label1jj2_1;
+GtkWidget *label1jj2_2;
+GtkWidget *label1jj2_3;
+GtkWidget *label1jj2_4;
+GtkWidget *label1jj2_5;
+GtkWidget *label1jj2_6;
+
+GtkWidget *label1jj3_1;
+GtkWidget *label1jj3_2;
+GtkWidget *label1jj3_3;
+GtkWidget *label1jj3_4;
+GtkWidget *label1jj3_5;
+GtkWidget *label1jj3_6;
+
+
+
+extern int myTotalNum;
+extern int myMajorNum;
+extern int myCultureNum;
+
+extern int originTotalNum=140;
+extern int originMajorNum=75;
+extern int originCultureNum=30;
+
+extern int mustTotalNum=originTotlalNum-myTotalNum;
+extern int mustMajorNum=originMajorNum-myMajorNum;
+extern int mustCultureNum=originCultureNum-myCultureNum;
+
+
 
 extern char *subA[16];		//name of subject
 extern double gradeA[16];	//what i get point
@@ -124,4 +315,7 @@ void save_senior_second();
 void setGrade(int n);
 void setCredit(int n);
 void setMajor(int n);
+void calMajor(void);
+void timetable(void);
+void saveButton(void);
 
