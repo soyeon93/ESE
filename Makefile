@@ -1,4 +1,8 @@
+DIRS = lib apps
+.PHONY : all clean
 
-test: test1.c
-	gcc test1.c -o test `pkg-config --cflags --libs gtk+-2.0`
-	./test
+all:
+	@for d in $(DIRS); \
+	do \
+	   $(MAKE) -C $$d; \
+	done

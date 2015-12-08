@@ -1,0 +1,16 @@
+libfuncs.a : btn_clicked.o calculate.o clear.o destroy.o mainSetting.o save_semester.o setting.o
+   ar rv libfuncs.a btn_clicked.o calculate.o clear.o destroy.o mainSetting.o save_semester.o setting.o
+btn_clicked.o : btn_clicked.c
+   gcc `pkg-config --cflags --libs gtk+-2.0` -c -g -I../include btn_clicked.c -o btn_clicked.o
+calculate.o : calculate.c
+   gcc `pkg-config --cflags --libs gtk+-2.0` -c -g -I../include calculate.c -o calculate.o
+clear.o : clear.c
+   gcc `pkg-config --cflags --libs gtk+-2.0` -c -g -I../include clear.c -o clear.o
+destroy.o : destroy.c
+   gcc `pkg-config --cflags --libs gtk+-2.0` -c -g -I../include destroy.c -o destroy.o
+mainSetting.o : mainSetting.c
+   gcc `pkg-config --cflags --libs gtk+-2.0` -c -g -I../include mainSetting.c -o mainSetting.o
+save_semester.o : save_semester.c
+   gcc `pkg-config --cflags --libs gtk+-2.0` -c -g -I../include save_semester.c -o save_semester.o
+setting.o : setting.c
+   gcc `pkg-config --cflags --libs gtk+-2.0` -c -g -I../include setting.c -o setting.o

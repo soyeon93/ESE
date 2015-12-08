@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <gtk/gtk.h>
 #define X 150 //axis x
 #define Y 30	//axis y
@@ -2744,6 +2745,9 @@ void buttonClicked(GtkWidget *widget)
 		}			
 	}*/
 }
+=======
+#include<gtk/gtk.h>
+>>>>>>> 3e291c04d8f07773353b25d0ed45a93690fd2b71
 int main (int argc, char *argv[])
 {//box size - 
 	gtk_init(&argc, &argv);	// GTK 기능을 사용하기전에 필요한 모든것을 초기화합니다
@@ -2783,26 +2787,33 @@ int main (int argc, char *argv[])
 	hbox_junior = gtk_hbox_new(TRUE, 0);
 	hbox_senior = gtk_hbox_new(TRUE, 0);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	show_hbox_fresh = gtk_hbox_new(TRUE, 0);
 	show_hbox_sophomore = gtk_hbox_new(TRUE, 0);
 	show_hbox_junior = gtk_hbox_new(TRUE, 0);
 	show_hbox_senior = gtk_hbox_new(TRUE, 0);
 >>>>>>> 6d998e4084af7fbdb83a5189b5173e8d94427bea
+=======
+>>>>>>> 3e291c04d8f07773353b25d0ed45a93690fd2b71
 	hbox_label = gtk_hbox_new(TRUE, 0);
 
 
 	window_vbox = gtk_vbox_new(TRUE, 0);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	window_vbox_info = gtk_vbox_new(TRUE, 0);
 >>>>>>> 6d998e4084af7fbdb83a5189b5173e8d94427bea
+=======
+>>>>>>> 3e291c04d8f07773353b25d0ed45a93690fd2b71
 	window_hbox1 = gtk_hbox_new(TRUE, 0);
 	window_hbox2 = gtk_hbox_new(TRUE, 0);
 
 
 	/*-------------------------------------------------------*/
 	//make label
+<<<<<<< HEAD
 	window_main_label = gtk_label_new("select button");	
 	gtk_widget_set_size_request(window_main_label, X, Y);
 
@@ -3397,6 +3408,20 @@ int main (int argc, char *argv[])
 =======
 	gtk_container_add(GTK_CONTAINER(window_saved_info),window_vbox_info);
 >>>>>>> 6d998e4084af7fbdb83a5189b5173e8d94427bea
+=======
+	btn_settin();
+
+	/*-------------------------------------------------------*/
+	//버튼을 v박스에 포함시킵니다.
+	addToVbox();
+
+	/*-------------------------------------------------------*/
+	//버튼이 클릭될경우 buttonClocked 함수를 callback합니다.
+	callback();
+
+
+	gtk_container_add(GTK_CONTAINER(window_main),window_vbox);
+>>>>>>> 3e291c04d8f07773353b25d0ed45a93690fd2b71
 	gtk_container_add(GTK_CONTAINER(window),vbox);
 	//만들어둔 창에 v박스를 포함시킵니다.
 

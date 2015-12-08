@@ -1,0 +1,71 @@
+char *subA[16];		//name of subject
+double gradeA[16]={0,};	//what i get point
+int creditA[16]={0,};	//credit of subject (sth-point)
+int majorA[16]={0,};	//is it major or not
+int buf_grd[16]={0,};
+int buf_crd[16]={0,};
+int buf_maj[16]={0,};	
+int cntA=0;
+int mjr_cntA=0;
+
+char *sub_fresh_first[16];
+int grade_fresh_first[16]={0,};
+int credit_fresh_first[16]={0,};
+int major_fresh_first[16]={0,};	
+double re_fresh_first=0;
+double mjr_fresh_first=0;  
+
+char *sub_fresh_second[16];
+int grade_fresh_second[16]={0,};
+int credit_fresh_second[16]={0,};
+int major_fresh_second[16]={0,}; 
+double re_fresh_second=0;
+double mjr_fresh_second=0; 
+
+char *sub_sophomore_first[16];
+int grade_sophomore_first[16]={0,};
+int credit_sophomore_first[16]={0,};
+int major_sophomore_first[16]={0,};
+double re_sophomore_first=0;
+double mjr_sophomore_first=0;  
+
+char *sub_sophomore_second[16];
+int grade_sophomore_second[16]={0,};
+int credit_sophomore_second[16]={0,};
+int major_sophomore_second[16]={0,};
+double re_sophomore_second=0;
+double mjr_sophomore_second=0;  
+
+char *sub_junior_first[16];
+int grade_junior_first[16]={0,};
+int credit_junior_first[16]={0,};
+int major_junior_first[16]={0,}; 
+double re_junior_first=0;
+double mjr_junior_first=0; 
+
+char *sub_junior_second[16];
+int grade_junior_second[16]={0,};
+int credit_junior_second[16]={0,};
+int major_junior_second[16]={0,};
+double re_junior_second=0;
+double mjr_junior_second=0;  
+
+char *sub_senior_first[16];
+int grade_senior_first[16]={0,};
+int credit_senior_first[16]={0,};
+int major_senior_first[16]={0,}; 
+double re_senior_first=0;
+double mjr_senior_first=0; 
+
+char *sub_senior_second[16];
+int grade_senior_second[16]={0,};
+int credit_senior_second[16]={0,};
+int major_senior_second[16]={0,};
+double re_senior_second=0;
+double mjr_senior_second=0;  
+
+int counter = 0;	//the number of subject
+double total_score=0;
+double major_score=0;
+int flag=-1;
+
